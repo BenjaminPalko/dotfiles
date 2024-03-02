@@ -5,10 +5,16 @@ This is a work in progress setup for my first Arch Linux install, I am finally p
 ### TODO
 
 - [ ] zsh Configuration
+- [ ] scripted setup
+    - [ ] pacman packages
+    - [ ] yay packages
+    - [ ] brew packages
+    - [ ] aliases
+    - [ ] symlinks
 - [ ] hyprland Configuration
-    - waybar
-    - hyprpaper
-    - swaylock/hyprlock
-    - swayidle/hypridle
-    - keybindings
-    - 
+    - [ ] waybar
+    - [ ] hyprpaper
+    - [ ] swaylock/hyprlock
+    - [ ] swayidle/hypridle
+    - [ ] keybindings
+    - [ ] wlogout
