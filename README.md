@@ -53,6 +53,10 @@ This is a list of packages sorted by the package manager used to install them al
 - swww - wallpaper animations
 - hypridle - hyprland idle daemon
 - hyprlock - hyprland lock screen
+- wlogout - logout manu
+- pywal - generates color palettes from wallpaper
+- hyprland-plugins - self explanitory
+- SwayNotificationCenter - notification UI
 
 ### Yay
 
