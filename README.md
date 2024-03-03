@@ -39,9 +39,11 @@ This is a list of packages sorted by the package manager used to install them al
 - curl - same as wget
 - xclip - Clipboard util
 - ripgrep - CLI grep tool (used for neovim text search across files)
-- spotify - Music App
 - btop - resource monitor
 - dunst - notification daemon
+- spotify - Music App
+- discord - Messaging
+- caprine - Facebook messenger
 
 #### Hyprland
 
@@ -51,6 +53,8 @@ This is a list of packages sorted by the package manager used to install them al
 - hyprlock - hyprland lock screen
 
 ### Yay
+
+- cava - audio visualizer
 
 ### Brew
 

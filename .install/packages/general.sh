@@ -20,6 +20,7 @@ packagesPacman=(
   "dunst"
   "spotify-launcher"
   "discord"
+  "caprine"
 )
 
 packagesYay=(
