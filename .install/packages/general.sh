@@ -1,4 +1,5 @@
 packagesPacman=(
+  "thunar"
   "zsh"
   "bitwarden"
   "firefox"
@@ -13,11 +14,14 @@ packagesPacman=(
   "xclip"
   "ripgrep"
   "waybar"
-  "swaylock"
-  "swayidle"
+  "hypridle"
+  "hyprlock"
+  "btop"
+  "dunst"
 )
 
 packagesYay=(
+  "cava"
 )
 
 packagesBrew=(
