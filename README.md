@@ -18,3 +18,42 @@ This is a work in progress setup for my first Arch Linux install, I am finally p
     - [ ] swayidle/hypridle
     - [ ] keybindings
     - [ ] wlogout
+
+## Packages
+
+This is a list of packages sorted by the package manager used to install them along with a small description of what they do as well as a link to their website/docs
+
+### Pacman
+
+- Thunar - file manager
+- zsh - Shell
+- Bitwarden - Password manager
+- Firefox - web browser
+- git - Version control
+- github-cli - Github CLI
+- lazygit - CLI git client
+- neofetch - System display
+- neovim - CLI based editor and IDE
+- ttf-jetbrains-mono-nerd - Nerd font pack
+- wget - retrive files over http(s)
+- curl - same as wget
+- xclip - Clipboard util
+- ripgrep - CLI grep tool (used for neovim text search across files)
+- spotify - Music App
+
+#### Hyprland
+
+- waybar - wayland status bar
+- swaylock - wayland lock screen
+- swayidle - wayland idle daemon
+- swww - wallpaper animations
+
+### Yay
+
+### Brew
+
+- zsh-completions - zsh plugin that adds CLI completions
+- zsh-autosuggestions - zsh that adds suggestions
+- asdf - runtime manager (nodejs, python, bun, etc...)
+
+
