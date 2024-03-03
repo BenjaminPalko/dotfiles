@@ -25,6 +25,7 @@ packagesPacman=(
 
 packagesYay=(
   "cava"
+  "emote"
 )
 
 packagesBrew=(
