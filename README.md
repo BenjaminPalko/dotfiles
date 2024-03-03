@@ -40,13 +40,15 @@ This is a list of packages sorted by the package manager used to install them al
 - xclip - Clipboard util
 - ripgrep - CLI grep tool (used for neovim text search across files)
 - spotify - Music App
+- btop - resource monitor
+- dunst - notification daemon
 
 #### Hyprland
 
 - waybar - wayland status bar
-- swaylock - wayland lock screen
-- swayidle - wayland idle daemon
 - swww - wallpaper animations
+- hypridle - hyprland idle daemon
+- hyprlock - hyprland lock screen
 
 ### Yay
 
