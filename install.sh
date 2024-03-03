@@ -16,3 +16,16 @@ echo -e "${NONE}"
 
 mkdir ~/Development/
 
+# Install package managers
+source .install/install-yay.sh
+source .install/brew-install.sh
+
+# Install packages
+source .install/install-packages.sh
+
+# Symantic links
+source .install/symlink.sh
+
+# Add asdf plugins
+source .install/add-asdf-plugins.sh
+
