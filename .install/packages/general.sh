@@ -18,6 +18,8 @@ packagesPacman=(
   "hyprlock"
   "btop"
   "dunst"
+  "cmatrix"
+  "swappy"
   "spotify-launcher"
   "discord"
   "caprine"

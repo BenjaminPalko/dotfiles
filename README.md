@@ -41,6 +41,8 @@ This is a list of packages sorted by the package manager used to install them al
 - ripgrep - CLI grep tool (used for neovim text search across files)
 - btop - resource monitor
 - dunst - notification daemon
+- cmatrix - THE MATRIX
+- swappy - screenshot tool
 - spotify - Music App
 - discord - Messaging
 - caprine - Facebook messenger
