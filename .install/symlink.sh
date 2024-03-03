@@ -20,6 +20,7 @@ _symlinkFiles() {
 
 # directories
 directories=(
+  "cava"
   "gtk-3.0"
   "hypr"
   "kitty"
