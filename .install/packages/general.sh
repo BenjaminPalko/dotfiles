@@ -18,6 +18,8 @@ packagesPacman=(
   "hyprlock"
   "btop"
   "dunst"
+  "spotify-launcher"
+  "discord"
 )
 
 packagesYay=(
