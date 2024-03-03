@@ -14,7 +14,7 @@ _symlinkFiles() {
     if [ -f ~/${file} ]; then
       rm ~/${file}
     fi
-    ln -s ~/dotfiles/${file}/ ~/${file}
+    ln -s ~/dotfiles/${file} ~/${file}
   done;
 }
 
