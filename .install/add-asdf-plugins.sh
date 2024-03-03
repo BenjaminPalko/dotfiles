@@ -4,11 +4,15 @@ asdfPlugins=(
   "bun"
 )
 
-_installPlugins() {
+_addPlugins() {
   for plugin; do
     asdf plugin add "${plugin}"
   done;
 }
 
-_installPlugins "${asdfPlugins[@]}"
+# Add asdf plugins
+_addPlugins "${asdfPlugins[@]}"
+
+# Install plugins
+asdf install
 
