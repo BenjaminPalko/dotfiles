@@ -46,6 +46,7 @@ This is a list of packages sorted by the package manager used to install them al
 - spotify - Music App
 - discord - Messaging
 - caprine - Facebook messenger
+- obsidian - markdown and stuff
 
 #### Hyprland
 
