@@ -2,6 +2,36 @@
 
 This is a work in progress setup for my first Arch Linux install
 
+## Arch install
+
+Start by creating a bootable USB from an Arch ISO, you can download from [here](https://archlinux.org/download/)
+
+Boot into the USB...
+
+Connect to wifi...
+
+```
+iwctl
+```
+Test connection with `ping google.ca`
+
+Run the arch install command
+
+```shell
+archinstall
+```
+Running through the options...
+
+- Disc config: Best-effort
+- Boot loader: Grub
+- User account: Create one and give super
+- Profile: Minimal
+- Audio: Pipewire
+- Additional packages: `git`
+- Network: Copy ISE network configuration
+
+Install...
+
 ### TODO
 
 - [ ] zsh Configuration
