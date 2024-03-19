@@ -20,7 +20,12 @@ mkdir ~/Development/
 source .install/install-yay.sh
 source .install/brew-install.sh
 
-# Install packages
+# Install base packages
+source .install/packages/base.sh
+source .install/install-packages.sh
+
+# Install general packages
+source .install/packages/general.sh
 source .install/install-packages.sh
 
 # Symantic links
