@@ -5,7 +5,7 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "doomchad",
+  theme = "bearded-arc",
   theme_toggle = { "nord", "nord" },
 
   hl_override = highlights.override,
