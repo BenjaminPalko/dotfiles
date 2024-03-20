@@ -9,6 +9,7 @@
 */
 @import url('./styles/waybar.css');
 @import url('./styles/animations.css');
+@import url('./styles/common.css');
 
 /*
 * Modules 
@@ -18,65 +19,11 @@
 @import url('./styles/modules/idle.css');
 @import url('./styles/modules/memory.css');
 @import url('./styles/modules/network.css');
+@import url('./styles/modules/spotify.css');
 @import url('./styles/modules/temperature.css');
 @import url('./styles/modules/tray.css');
-@import url('./styles/modules/window.css');
 @import url('./styles/modules/wireplumber.css');
 @import url('./styles/modules/workspaces.css');
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-button {
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
-  border: none;
-  border-radius: 4px;
-}
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-  background: inherit;
-  /*box-shadow: inset 0 -1px #5e81ac;*/
-}
-
-
-#clock,
-#cpu,
-#memory,
-#temperature,
-#network,
-#wireplumber,
-#custom-media,
-#tray,
-#idle_inhibitor,
-#scratchpad,
-#mpd {
-  padding: 0 10px;
-  color: #ddd;
-}
-
-#window,
-#workspaces {
-  margin: 0 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 8px;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
-}
 
 @keyframes blink {
   to {
@@ -85,52 +32,3 @@ button:hover {
   }
 }
 
-label:focus {
-  background-color: #000000;
-}
-
-#mpd {
-  background-color: #66cc99;
-  color: #2a5c45;
-}
-
-#mpd.disconnected {
-  background-color: #f53c3c;
-}
-
-#mpd.stopped {
-  background-color: #90b1b1;
-}
-
-#mpd.paused {
-  background-color: #51a37a;
-}
-
-#scratchpad {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-  background-color: transparent;
-}
-
-#privacy {
-  padding: 0;
-}
-
-#privacy-item {
-  padding: 0 5px;
-  color: white;
-}
-
-#privacy-item.screenshare {
-  background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-  background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-  background-color: #0069d4;
-}

@@ -1,10 +1,4 @@
-@import url('../common.css');
-
 #clock {
-  border: solid 1px #5e81ac;
-  border-radius: 9999px;
-  padding: 0 10px;
-  color: #eee;
-  background: linear-gradient(144deg, #8fbcbb 0%, #5e81ac 100%);
+  color: white;
 }
 
