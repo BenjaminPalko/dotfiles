@@ -5,11 +5,11 @@
 }
 
 /*
-* General 
+* General
 */
+@import url('./styles/module-groups.css');
+@import url('./styles/modules.css');
 @import url('./styles/waybar.css');
-@import url('./styles/animations.css');
-@import url('./styles/common.css');
 
 /*
 * Modules 
@@ -24,11 +24,4 @@
 @import url('./styles/modules/tray.css');
 @import url('./styles/modules/wireplumber.css');
 @import url('./styles/modules/workspaces.css');
-
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: #000000;
-  }
-}
 

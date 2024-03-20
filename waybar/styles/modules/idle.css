@@ -1,10 +1,7 @@
 #idle_inhibitor {
-  border-radius: 9999px;
-  background-color: #2d3436;
 }
 
 #idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
+  background-color: #555;
 }
 

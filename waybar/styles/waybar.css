@@ -1,58 +1,7 @@
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
 }
 
 window#waybar.hidden {
   opacity: 0.2;
 }
-
-window#waybar.termite {
-  background-color: #3f3f3f;
-}
-
-window#waybar.chromium {
-  background-color: #000000;
-  border: none;
-}
-
-.modules-left {
-  background-color: rgba(43, 48, 59, 0.5);
-  border-bottom: 2px solid rgba(100, 114, 125, 0.5);
-  border-left: 2px solid white;
-  border-radius: 5px;
-  color: #ffffff;
-  padding: 0 2px 0 2px;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-.moadules-left:first-child {
-  border-right: none;
-}
-
-.modules-center {
-  background-color: rgba(43, 48, 59, 0.5);
-  border-bottom: 2px solid rgba(100, 114, 125, 0.5);
-  border-radius: 5px;
-  color: #ffffff;
-  padding: 0 2px 0 2px;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-
-}
-
-.modules-right {
-  background-color: rgba(43, 48, 59, 0.5);
-  border-bottom: 2px solid rgba(100, 114, 125, 0.5);
-  border-radius: 5px;
-  color: #ffffff;
-  padding: 0 2px 0 2px;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-
-}
-
-.modules-right:last-child {
-  border-right: none;
-}
-

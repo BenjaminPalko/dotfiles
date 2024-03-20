@@ -1,5 +1,5 @@
 #tray {
-  background-color: #2980b9;
+  padding: 0 10px;
 }
 
 #tray > .passive {
@@ -9,5 +9,14 @@
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
+}
+
+#tray button {
+  border-radius: 0px;
+  box-shadow: inset 0 -3px transparent;
+}
+
+#tray button:hover {
+  box-shadow: inset 0 -3px #5e81ac;
 }
 
