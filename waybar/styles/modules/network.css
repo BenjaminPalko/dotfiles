@@ -1,8 +1,8 @@
 #network {
-  color: #2980b9;
+  color: #5e81ac;
 }
 
 #network.disconnected {
-  color: #f53c3c;
+  background-color: #f53c3c;
 }
 

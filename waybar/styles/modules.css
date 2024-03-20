@@ -1,9 +1,11 @@
 label.module {
-    padding: 0 10px;
-    box-shadow: inset 0 -3px;
+  padding: 0 10px;
+  box-shadow: inset 0 -2px;
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 box.module {
   padding: 0 10px;
+  box-shadow: inset 0 -2px;
 }
-

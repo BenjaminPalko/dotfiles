@@ -1,8 +1,8 @@
 #temperature {
-  color: #f0932b;
+  color: #d08770;
 }
 
 #temperature.critical {
-  color: #eb4d4b;
+  color: #bf616a;
 }
 

@@ -2,43 +2,33 @@
 * Modules groups
 */
 .modules-left {
-  padding: 0 2px 0 2px;
+  padding: 0 3px;
+  border: 1px solid rgba(125, 125, 125, 0.66);
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.66);
-  margin-left: 15px;
+  margin-left: 10px;
+  animation: fadeIn 2.5s;
 }
 
 .modules-center {
-  padding: 0 2px 0 2px;
+  padding: 0 3px;
+  border: 1px solid rgba(125, 125, 125, 0.66);
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.66);
+  animation: fadeIn 2.5s;
 }
 
 .modules-right {
-  padding: 0 2px 0 2px;
+  padding: 0 3px;
+  border: 1px solid rgba(125, 125, 125, 0.66);
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.66);
-  margin-right: 15px;
+  margin-right: 10px;
+  animation: fadeIn 2.5s;
 }
 
-/*
-* Module widgets
-*/
-.modules-left > widget {
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
-
-.modules-left > widget:first-child {
-}
-
-.modules-left > widget:last-child {
-}
-.modules-right > widget {
-}
-
-.modules-right > widget:first-child {
-}
-
-.modules-right > widget:last-child {
-}
-
 
