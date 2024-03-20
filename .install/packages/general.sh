@@ -13,10 +13,6 @@ packagesPacman=(
   "discord"
   "caprine"
   "obsidian"
-  "qt-quickcontrols"
-  "qt-quickcontrols2"
-  "qt5-graphicaleffects"
-  "qt5-svg"
 )
 
 packagesYay=(

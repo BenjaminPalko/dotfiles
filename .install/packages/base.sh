@@ -1,4 +1,5 @@
 packagesPacman=(
+  "nvidia"
   "git"
   "grep"
   "wget"
@@ -13,6 +14,7 @@ packagesPacman=(
   "pipewire-pulse"
 	"xdg-desktop-portal-hyprland"
   "gtk3"
+  "gtk4"
   "thunar"
   "kitty"
   "wofi"
