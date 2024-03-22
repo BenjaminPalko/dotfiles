@@ -27,6 +27,9 @@ directories=(
   "neofetch"
   "nvim"
   "pipewire"
+  "swappy"
+  "swaync"
+  "wal"
   "waybar"
   "wofi"
 )

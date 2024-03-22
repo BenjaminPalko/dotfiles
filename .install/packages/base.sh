@@ -13,12 +13,12 @@ packagesPacman=(
   "pipewire-alsa"
   "pipewire-pulse"
 	"xdg-desktop-portal-hyprland"
+  "python-pywal"
   "gtk3"
   "gtk4"
   "thunar"
   "kitty"
   "wofi"
-	"dunst"
 	"waybar"
 	"grim"
 	"slurp"
@@ -27,6 +27,7 @@ packagesPacman=(
 )
 
 packagesYay=(
+	"swaync"
 	"swww"
 	"wlogout"
 	"nwg-look"
