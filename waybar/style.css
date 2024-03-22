@@ -1,8 +1,15 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  text-shadow: none;
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
+
+/*
+* Color Palette
+*/
+@import url('../../.cache/wal/colors-waybar.css');
 
 /*
 * General
@@ -20,6 +27,8 @@
 @import url('./styles/modules/memory.css');
 @import url('./styles/modules/network.css');
 @import url('./styles/modules/spotify.css');
+@import url('./styles/modules/swaync.css');
+@import url('./styles/modules/swww.css');
 @import url('./styles/modules/temperature.css');
 @import url('./styles/modules/tray.css');
 @import url('./styles/modules/wireplumber.css');

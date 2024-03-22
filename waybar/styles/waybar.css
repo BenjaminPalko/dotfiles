@@ -1,7 +1,18 @@
 window#waybar {
-  background-color: transparent;
+  background: linear-gradient(90deg, mix(@color0, transparent, 0.5), mix(@color1, transparent, 0.5), mix(@color0, transparent, 0.5));
+  animation: fadeIn 2.5s;
+}
+
+button {
+  text-shadow: none;
 }
 
 window#waybar.hidden {
   opacity: 0.2;
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+

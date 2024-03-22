@@ -1,4 +1,5 @@
 #clock {
-  color: #8fbcbb;
+  color: #eee;
+  background-color: @color4;
 }
 
