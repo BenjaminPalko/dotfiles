@@ -1,6 +1,5 @@
 #wireplumber {
-  color: #eee;
-  background-color: @color6;
+  background: @color4;
 }
 
 #wireplumber.muted {

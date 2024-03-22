@@ -9,7 +9,6 @@
   box-shadow: none;
   border: none;
   border-radius: 0;
-  color: @color8;
 }
 
 #workspaces button:first-child {
@@ -23,13 +22,11 @@
 }
 
 #workspaces button.active {
-  background-color: @color4;
-  color: @color8;
+  background: @color4;
 }
 
 #workspaces button:hover {
   background: @color4;
-  color: @color8;
 }
 
 #workspaces button.focused {

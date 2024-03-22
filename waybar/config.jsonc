@@ -8,7 +8,8 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "tray"
+        "tray",
+        "hyprland/window"
     ],
     "modules-center": [
         "custom/spotify"
@@ -26,10 +27,22 @@
     ],
     "idle_inhibitor": {
         "format": "{icon}",
+        "tooltip-format-activated": "On",
+        "tooltip-format-deactivated": "Off",
         "format-icons": {
-            "activated": "󰒳",
-            "deactivated": "󰒲"
+            "activated": "󱫗",
+            "deactivated": "󰔛"
         }
+    },
+    "hyprland/window": {
+      "format": "{}",
+      "rewrite": {
+          "(.*) — Mozilla Firefox": "󰈹  $1",
+          "(.*) - fish": "> [$1]",
+          "nv": "  neovim"
+      },
+      "separate-outputs": true,
+      "max-length": "40"
     },
     "tray": {
         "icon-size": 18,
