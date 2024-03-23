@@ -21,6 +21,10 @@
   border-radius: 0 9999px 9999px 0;
 }
 
+#workspaces button:only-child {
+  border-radius: 9999px;
+}
+
 #workspaces button.active {
   background: @color4;
 }
