@@ -1,43 +1,31 @@
 
 #workspaces {
   padding: 0;
-  border: 2px solid @color4; 
+  /* border: 2px solid @color4;  */
 }
 
 #workspaces button {
-  padding: 0 4px;
+  padding: 0 9px 0 4px;
   box-shadow: none;
   border: none;
-  border-radius: 0;
-}
-
-#workspaces button:first-child {
-  padding-left: 8px;
-  border-radius: 9999px 0 0 9999px;
-}
-
-#workspaces button:last-child {
-  padding-right: 8px;
-  border-radius: 0 9999px 9999px 0;
-}
-
-#workspaces button:only-child {
   border-radius: 9999px;
+  color: @color2;
 }
 
 #workspaces button.active {
-  background: @color4;
+  color: @color5;
 }
 
 #workspaces button:hover {
-  background: @color4;
+  background: transparent;
+  color: @color5;
 }
 
 #workspaces button.focused {
-  background-color: @color5;
+  color: @color4;
 }
 
 #workspaces button.urgent {
-  background-color: #bf616a;
+  color: #bf616a;
 }
 

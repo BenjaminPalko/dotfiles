@@ -124,3 +124,5 @@ compinit
 
 neofetch
 
+
+export PATH=$PATH:/home/benjamin/.spicetify

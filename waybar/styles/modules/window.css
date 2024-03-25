@@ -6,13 +6,8 @@
 }
 
 window#waybar.kitty {
-  background-color: #111111;
+  background-color: transparent;
   color: #ffffff;
-}
-
-window#waybar.chromium {
-  background-color: #eeeeee;
-  color: #000000;
 }
 
 /* make window module transparent when no windows present */

@@ -34,6 +34,13 @@
             "deactivated": "󰔛"
         }
     },
+    "hyprland/workspaces": {
+      "active-only": false,
+      "format": "{icon}",
+      "format-icons": {
+        "default": ""
+      }
+    },
     "hyprland/window": {
       "format": "{}",
       "rewrite": {
