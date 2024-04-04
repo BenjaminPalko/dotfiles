@@ -234,11 +234,11 @@
 
 gradient = 1
 gradient_count = 5
-gradient_color_1 = "#5B3A4B"
-gradient_color_2 = "#374250"
-gradient_color_3 = "#634656"
-gradient_color_4 = "#9A3C59"
-gradient_color_5 = "#DF3D63"
+gradient_color_1 = "#D26B6C"
+gradient_color_2 = "#F29674"
+gradient_color_3 = "#243E9C"
+gradient_color_4 = "#2C4E99"
+gradient_color_5 = "#5D6093"
 
 
 [smoothing]
