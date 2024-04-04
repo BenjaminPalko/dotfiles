@@ -6,5 +6,6 @@ wal -i ~/Wallpapers/ -n
 # that this works even when a directory is passed.
 swww img "$(< "${HOME}/.cache/wal/wal")" --transition-type wipe --transition-angle 45 --transition-fps 90
 
+# Copy cava and update config
 cp ~/.cache/wal/cava-config ~/dotfiles/cava/config && pkill -USR2 cava
 
