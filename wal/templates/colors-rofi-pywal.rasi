@@ -1,5 +1,5 @@
 * {{
-    current-image: {wallpaper};
+    current-image: "{wallpaper}";
     background: {background};
     foreground: {foreground};
     color0:     {color0};
