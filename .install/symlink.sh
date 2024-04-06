@@ -27,11 +27,11 @@ directories=(
   "neofetch"
   "nvim"
   "pipewire"
+  "rofi"
   "swappy"
   "swaync"
   "wal"
   "waybar"
-  "wofi"
 )
 
 _symlinkDirs() {

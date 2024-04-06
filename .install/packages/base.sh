@@ -18,7 +18,6 @@ packagesPacman=(
   "gtk4"
   "thunar"
   "kitty"
-  "wofi"
 	"waybar"
 	"grim"
 	"slurp"
@@ -27,6 +26,7 @@ packagesPacman=(
 )
 
 packagesYay=(
+  "rofi-lbonn-wayland-git"
 	"swaync"
 	"swww"
 	"wlogout"
