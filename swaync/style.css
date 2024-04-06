@@ -1,17 +1,16 @@
 /* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
 
-@import url("~/.cache/wal/colors.css") 
+@import "../../.cache/wal/colors-waybar.css";
 
-@define-color noti-border-color @color2;
-@define-color noti-bg rgba(0, 0, 0, 0.8);
-@define-color noti-bg-alt #111111;
-@define-color noti-bg-hover @color2;
-@define-color text-color @color2;
+@define-color noti-border-color @color4;
+@define-color noti-bg rgba(0, 0, 0, 0.4);
+@define-color noti-bg-alt rgba(0, 0, 0, 0.6);
+@define-color noti-bg-hover @color4;
+@define-color text-color @color4;
 @define-color text-color-alt @color7;
 @define-color text-color-disabled rgba(150, 150, 150, 0.8);
 
 * {
-  font-family: FiraCode;
   font-weight: Bolder;
 }
 
@@ -19,7 +18,7 @@
 .control-center .notification-row:hover {
   opacity: 1;
   background: @noti-bg;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .notification-row {
@@ -28,14 +27,14 @@
 }
 
 .notification {
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .notification-content {
   color: @text-color;
   background: @noti-bg;
   padding: 3px 10px 3px 6px;
-  border-radius: 10px;
+  border-radius: 0px;
   border: 2px solid @noti-border-color;
   margin: 0px;
 }
@@ -162,6 +161,7 @@
   border: 2px solid @noti-border-color;
   color: @text-color;
   border-radius: 10px;
+  padding: 8px;
 }
 
 .control-center-list {
@@ -212,7 +212,7 @@
 }
 
 .widget-dnd > switch {
-  border-radius: 10px;
+  border-radius: 9999px;
   /* border: 1px solid #7aa2f7; */
   background: @noti-border-color;
 }
