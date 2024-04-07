@@ -11,14 +11,12 @@
 @define-color text-color-disabled rgba(150, 150, 150, 0.8);
 
 * {
-  font-weight: Bolder;
+  font-family: 'JetBrains Mono';
+  font-weight: 500;
 }
 
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
-  opacity: 1;
-  background: @noti-bg;
-  border-radius: 0px;
 }
 
 .notification-row {
@@ -26,15 +24,10 @@
   margin: 0px;
 }
 
-.notification {
-  border-radius: 0px;
-}
-
 .notification-content {
   color: @text-color;
-  background: @noti-bg;
   padding: 3px 10px 3px 6px;
-  border-radius: 0px;
+  border-radius: 10px;
   border: 2px solid @noti-border-color;
   margin: 0px;
 }
@@ -45,21 +38,9 @@
   border-radius: 10px;
 }
 
-.close-button {
-  background: #f7768e;
-  color: @noti-bg;
-  text-shadow: none;
-  padding: 0;
-  border-radius: 10px;
-  margin-top: 5px;
-  margin-right: 5px;
-}
-
-.close-button:hover {
-  box-shadow: none;
-  background: #f7768e;
-  transition: all 0.15s ease-in-out;
-  border: none;
+.notification-default-action:hover,
+.notification-action:hover {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .notification-action {
@@ -68,13 +49,8 @@
   border-radius: 10px;
 }
 
-.notification-default-action:hover,
-.notification-action:hover {
-  color: @text-color;
-  background: @color1;
-}
-
 .notification-default-action {
+  background: transparent;
   border-radius: 10px;
   margin: 5px;
 }
@@ -86,12 +62,29 @@
 
 .notification-action:first-child {
   border-bottom-left-radius: 10px;
-  background: #1b1b2b;
+  background: transparent;
 }
 
 .notification-action:last-child {
   border-bottom-right-radius: 10px;
-  background: #1b1b2b;
+  background: transparent;
+}
+
+.close-button {
+  background: @text-color;
+  color: @noti-bg;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.close-button:hover {
+  box-shadow: none;
+  background: @text-color;
+  transition: all 0.15s ease-in-out;
+  border: none;
 }
 
 .inline-reply {
@@ -158,7 +151,6 @@
 
 .control-center {
   background: @noti-bg;
-  border: 2px solid @noti-border-color;
   color: @text-color;
   border-radius: 10px;
   padding: 8px;
@@ -182,24 +174,25 @@
 
 .widget-title {
   color: @noti-border-color;
-  background: @noti-bg-alt;
+  /* background: @noti-bg-alt; */
   padding: 3px 6px;
   margin: 5px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   border-radius: 10px;
 }
 
 .widget-title > button {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: @text-color;
   border-radius: 10px;
-  background: transparent;
-  border: 0.5px solid @noti-border-color;
+  background: @noti-bg;
+  border: none;
+  /* border: 0.5px solid @noti-border-color; */
 }
 
 .widget-title > button:hover {
-  background: #f7768e;
-  color: @noti-border-color;
+  background: @text-color-alt;
+  color: @noti-bg-alt;
 }
 
 .widget-dnd {
@@ -214,22 +207,22 @@
 .widget-dnd > switch {
   border-radius: 9999px;
   /* border: 1px solid #7aa2f7; */
-  background: @noti-border-color;
+  background: @text-color;
 }
 
 .widget-dnd > switch:checked {
-  background: #f7768e;
-  border: 1px solid #f7768e;
+  background: @text-color-alt;
+  /* border: 1px solid #f7768e; */
 }
 
 .widget-dnd > switch slider {
   background: @noti-bg;
-  border-radius: 10px;
+  border-radius: 9999px;
 }
 
 .widget-dnd > switch:checked slider {
   background: @noti-bg;
-  border-radius: 10px;
+  border-radius: 9999px;
 }
 
 .widget-label {
@@ -242,10 +235,8 @@
 }
 
 .widget-mpris {
-  color: @text-color;
-  background: @noti-bg-alt;
-  padding: 3px 6px;
-  margin: 5px;
+  color: white;
+  background: transparent;
   border-radius: 10px;
 }
 
@@ -254,23 +245,21 @@
 }
 
 .widget-mpris-player {
-  padding: 3px 6px;
-  margin: 5px;
 }
 
 .widget-mpris-title {
-  font-weight: 100;
-  font-size: 1rem;
+  font-weight: 200;
+  font-size: 1.15rem;
 }
 
 .widget-mpris-subtitle {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 .widget-buttons-grid {
   font-size: large;
   color: @noti-border-color;
-  padding: 2px;
+  padding: 4px;
   margin: 5px;
   border-radius: 10px;
   background: @noti-bg-alt;
@@ -300,8 +289,8 @@
 
 .widget-volume {
   background: @noti-bg-alt;
-  padding: 2px;
-  margin: 10px 10px 5px 10px;
+  /* padding: 4px; */
+  /* margin: 10px 10px 5px 10px; */
   border-radius: 10px;
   font-size: x-large;
   color: @text-color;
@@ -330,19 +319,16 @@
 }
 
 .low {
-  background: @text-color;
   padding: 0px;
   border-radius: 10px;
 }
 
 .normal {
-  background: @text-color;
   padding: 0px;
   border-radius: 10px;
 }
 
 .critical {
-  background: red;
   padding: 0px;
   border-radius: 10px;
 }

@@ -51,8 +51,8 @@
             "text": "Notification"
         },
         "mpris": {
-            "image-size": 10,
-            "image-radius": 0
+            "image-size": 48,
+            "image-radius": 9999
         },
         "volume": {
             "label": "󰕾"
