@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "Installing pacman packages..."
-_installPackagesPacman = "${packagesPacman[@]}"
+_installPackagesPacman "${packagesPacman[@]}";
 
 echo "Installing yay packages..."
-_installPackagesYay = "${packagesYay[@]}"
+_installPackagesYay "${packagesYay[@]}";
 
 echo "Installing brew packages..."
-_installPackagesBrew = "${packagesBrew[@]}"
+_installPackagesBrew "${packagesBrew[@]}";
 
