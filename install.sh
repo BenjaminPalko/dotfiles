@@ -28,6 +28,9 @@ source .install/install-packages.sh
 source .install/packages/general.sh
 source .install/install-packages.sh
 
+# Set Shell
+source .scripts/set-shell.sh
+
 # Symantic links
 source .install/symlink.sh
 
