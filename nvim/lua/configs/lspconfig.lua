@@ -1,17 +1,57 @@
-local on_attach = require("plugins.configs.lspconfig").on_attach
-local capabilities = require("plugins.configs.lspconfig").capabilities
+-- EXAMPLE
+local on_attach = require("nvchad.configs.lspconfig").on_attach
+local on_init = require("nvchad.configs.lspconfig").on_init
+local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
+local servers = {
+  -- bash
+  "bashls",
 
--- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "tsserver", "tailwindcss", "jsonls", "yamlls", "dockerls", "docker_compose_language_service", "eslint", "graphql", "marksman", "sqls" }
+  -- webdev
+  "html",
+  "cssls",
+  "cssmodules_ls",
+  "tailwindcss",
+  "eslint",
+  "graphql",
 
+  -- go
+  "gopls",
+
+  -- python
+  "pylsp",
+
+  -- config
+  "jsonls",
+  "yamlls",
+
+  -- docker
+  "dockerls",
+  "docker_compose_language_service",
+
+  -- markdown
+  "marksman",
+
+  -- sql
+  "sqls",
+}
+
+-- lsps with default config
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
+    on_init = on_init,
     capabilities = capabilities,
   }
 end
+
+-- typescript
+-- lspconfig.tsserver.setup {
+--   on_attach = on_attach,
+--   on_init = on_init,
+--   capabilities = capabilities,
+-- }
 
 lspconfig.jsonls.setup {
   settings = {
@@ -37,5 +77,3 @@ lspconfig.yamlls.setup {
   },
 }
 
--- 
--- lspconfig.pyright.setup { blabla}
