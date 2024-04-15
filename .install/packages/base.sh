@@ -1,4 +1,4 @@
-packagesPacman=("nvidia"
+packagesPacman=(
   "git"
   "grep"
   "wget"
