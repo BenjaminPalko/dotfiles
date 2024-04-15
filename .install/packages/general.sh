@@ -13,6 +13,7 @@ packagesPacman=(
   "discord"
   "caprine"
   "obsidian"
+  "glow"
 )
 
 packagesYay=(
@@ -24,4 +25,5 @@ packagesBrew=(
   "zsh-autosuggestions"
   "zsh-syntax-highlighting"
   "asdf"
+  "lazydocker"
 )
