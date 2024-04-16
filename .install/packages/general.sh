@@ -9,7 +9,6 @@ packagesPacman=(
   "ttf-jetbrains-mono-nerd" 
   "btop"
   "cmatrix"
-  "spotify-launcher"
   "discord"
   "caprine"
   "obsidian"
@@ -19,6 +18,8 @@ packagesPacman=(
 packagesYay=(
   "cava"
   "emote"
+  "spotify"
+  "spicetify-cli"
 )
 
 packagesBrew=(
