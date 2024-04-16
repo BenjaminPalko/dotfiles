@@ -37,3 +37,6 @@ source .install/symlink.sh
 # Add asdf plugins
 source .install/add-asdf-plugins.sh
 
+# Spicetify
+source .scripts/spicetify-postinstall.sh
+
