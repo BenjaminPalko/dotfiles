@@ -28,6 +28,9 @@ source .install/install-packages.sh
 source .install/packages/general.sh
 source .install/install-packages.sh
 
+# oh-my-zsh
+source .install/install-oh-my-zsh.sh
+
 # Set Shell
 source .scripts/set-shell.sh
 
