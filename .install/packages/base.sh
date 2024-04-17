@@ -27,6 +27,7 @@ packagesPacman=(
   "slurp"
   "swappy"
   "cliphist"
+  "xorg-xrdb"
 )
 
 packagesYay=(
