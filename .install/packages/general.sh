@@ -13,6 +13,8 @@ packagesPacman=(
   "caprine"
   "obsidian"
   "glow"
+  "lutris"
+  "steam"
 )
 
 packagesYay=(
