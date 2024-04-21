@@ -16,6 +16,7 @@ packagesPacman=(
   "bluez"
   "bluez-utils"
   "blueman"
+  "xdg-desktop-portal-wlr"
   "xdg-desktop-portal-hyprland"
   "python-pywal"
   "gtk3"
