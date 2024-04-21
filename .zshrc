@@ -124,5 +124,5 @@ compinit
 
 neofetch
 
-
+export EDITOR=nvim
 export PATH=$PATH:/home/benjamin/.spicetify
