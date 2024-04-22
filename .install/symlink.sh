@@ -2,6 +2,7 @@
 
 # files
 files=(
+  ".bashrc"
   ".zshrc"
   ".tool-versions"
 )
@@ -21,6 +22,7 @@ _symlinkFiles() {
 # directories
 directories=(
   "cava"
+  "discocss"
   "gtk-3.0"
   "hypr"
   "kitty"
