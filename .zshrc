@@ -3,6 +3,7 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt beep
+setopt autocd
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -13,7 +14,7 @@ compinit
 # End of lines added by compinstall
 
 alias rebuild="sudo nixos-rebuild switch"
-alias dotfiles="~/dotfiles/"
+alias dotfiles="cd ~/dotfiles/"
 alias nv="nvim"
 
 eval "$(starship init zsh)"
