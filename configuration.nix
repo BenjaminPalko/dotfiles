@@ -57,7 +57,9 @@
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-      asdf-vm
+      nodejs
+      bun
+      rustc
       # Music
       playerctl
       cava
