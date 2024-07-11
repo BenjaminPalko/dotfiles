@@ -13,6 +13,7 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelParams = [ "nvidia_drm.fbdev=1" ];
 
   # networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -60,6 +61,7 @@
       nodejs
       bun
       rustc
+      python3
       # Music
       playerctl
       cava
@@ -87,12 +89,14 @@
     gcc
     cmake
     unzip
+    ffmpeg
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     inotify-tools
     killall
     neofetch
     # Hyprland
+    hyprcursor
     waybar
     swaynotificationcenter
     swww
@@ -107,15 +111,17 @@
   ];
   fonts.packages = with pkgs; [ (nerdfonts.override { fonts = [ "JetBrainsMono"]; }) ];
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
       nvidia-vaapi-driver
     ];
   };
   hardware.nvidia = {
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
     modesetting.enable = true;
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -137,7 +143,6 @@
     steam = {
       enable = true;
       remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-      dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
       localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
     };
     starship.enable = true;
