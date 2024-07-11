@@ -37,9 +37,6 @@
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
 
-
-  
-
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
@@ -50,10 +47,6 @@
   # Enable sound.
   # hardware.pulseaudio.enable = true;
   # OR
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
-  };
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
@@ -64,11 +57,11 @@
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
+      asdf-vm
       # Music
+      playerctl
       cava
       spotify
-      # Shell
-      starship
       # Git
       git
       gh
@@ -98,8 +91,6 @@
     killall
     neofetch
     # Hyprland
-    hypridle
-    hyprlock
     waybar
     swaynotificationcenter
     swww
@@ -114,7 +105,6 @@
   ];
   fonts.packages = with pkgs; [ (nerdfonts.override { fonts = [ "JetBrainsMono"]; }) ];
 
-  services.xserver.videoDrivers = ["nvidia"];
   hardware.opengl = {
     enable = true;
     extraPackages = with pkgs; [
@@ -136,7 +126,11 @@
 
   programs = {
     zsh.enable = true;
-    hyprland.enable = true;
+    hyprland = {
+      enable = true;
+      xwayland.enable = true;
+    };
+    hyprlock.enable = true;
     thunar.enable = true;
     steam = {
       enable = true;
@@ -144,14 +138,20 @@
       dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
       localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
     };
+    starship.enable = true;
+  };
+  # List services that you want to enable:
+  services = {
+    pipewire = {
+      enable = true;
+      pulse.enable = true;
+    };
+    hypridle.enable = true;
+    openssh.enable = true;
+    xserver.videoDrivers = ["nvidia"];
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
