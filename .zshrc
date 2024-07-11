@@ -12,4 +12,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+alias rebuild="sudo nixos-rebuild switch"
+alias dotfiles="~/dotfiles/"
+alias nv="nvim"
+
 eval "$(starship init zsh)"
+
+neofetch

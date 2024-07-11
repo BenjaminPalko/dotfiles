@@ -69,8 +69,6 @@
       spotify
       # Shell
       starship
-      # YOLOOOOOOOOOO
-      steam
       # Git
       git
       gh
@@ -98,6 +96,7 @@
     wget
     inotify-tools
     killall
+    neofetch
     # Hyprland
     hypridle
     hyprlock
@@ -139,6 +138,12 @@
     zsh.enable = true;
     hyprland.enable = true;
     thunar.enable = true;
+    steam = {
+      enable = true;
+      remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+      dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+      localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+    };
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
