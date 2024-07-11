@@ -1,0 +1,9 @@
+#idle_inhibitor {
+  padding: 0 16px 0 12px;
+  background-color: @color5;
+}
+
+#idle_inhibitor.activated {
+  background-color: @color6;
+}
+

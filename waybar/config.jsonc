@@ -1,0 +1,125 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 36, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 8, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces",
+        "tray",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "custom/spotify"
+    ],
+    "modules-right": [
+        "custom/swww",
+        "wireplumber",
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "idle_inhibitor",
+        "clock",
+        "custom/swaync"
+    ],
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "tooltip-format-activated": "On",
+        "tooltip-format-deactivated": "Off",
+        "format-icons": {
+            "activated": "󱫗",
+            "deactivated": "󰔛"
+        }
+    },
+    "hyprland/workspaces": {
+      "active-only": false,
+      "format": "{icon}",
+      "format-icons": {
+        "default": ""
+      }
+    },
+    "hyprland/window": {
+      "format": "{}",
+      "rewrite": {
+          "(.*) — Mozilla Firefox": "󰈹  $1",
+          "(.*) - fish": "> [$1]",
+          "nv": "  neovim"
+      },
+      "separate-outputs": true,
+      "max-length": "40"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}",
+        "on-click": ""
+    },
+    "cpu": {
+        "format": "󰻠  {usage}%",
+        "tooltip": true
+    },
+    "memory": {
+        "format": "{}% 󰍛"
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{icon}  {temperatureC}°C",
+        "format-icons": ["", "", ""]
+    },
+    "wireplumber": {
+      "format": "  {volume}%",
+      "format-mute": "  {volume}%"
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "tooltip-format": "{essid}",
+        "format-wifi": "   {signalStrength}%",
+        "format-ethernet": "󰈀",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "󰖪"
+        //"format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "custom/spotify": {
+        "format": "{}",
+        "on-click": "playerctl --player=spotify play-pause",
+        "exec": "/usr/bin/python3 $HOME/.config/waybar/modules/mediaplayer.py --player spotify",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": " ",
+            "default": "🎜 "
+        }
+    },
+    "custom/swaync": {
+      "format": "{icon}",
+      "exec": "swaync-client -swb",
+      "return-type": "json",
+      "on-click": "sleep 0.1 && swaync-client -t -sw",
+      "format-icons": {
+        "notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+        "none": " ",
+        "dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+        "dnd-none": " "
+      }
+    },
+    "custom/swww": {
+      "format": "{icon}",
+      "tooltip": false,
+      "tooltip-format": "Change Wallpaper",
+      "on-click": "bash ~/.config/waybar/modules/switch-wallpaper.sh &",
+      "format-icons": {
+        "default": " "
+      }
+    }
+}
+

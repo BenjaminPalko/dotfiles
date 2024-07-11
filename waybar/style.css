@@ -1,0 +1,37 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: "JetBrains Mono", "Iosevka Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  text-shadow: none;
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/*
+* Color Palette
+*/
+@import url('../../.cache/wal/colors-waybar.css');
+
+/*
+* General
+*/
+@import url('./styles/module-groups.css');
+@import url('./styles/modules.css');
+@import url('./styles/waybar.css');
+
+/*
+* Modules 
+*/
+@import url('./styles/modules/clock.css');
+@import url('./styles/modules/cpu.css');
+@import url('./styles/modules/idle.css');
+@import url('./styles/modules/memory.css');
+@import url('./styles/modules/network.css');
+@import url('./styles/modules/spotify.css');
+@import url('./styles/modules/swaync.css');
+@import url('./styles/modules/swww.css');
+@import url('./styles/modules/temperature.css');
+@import url('./styles/modules/tray.css');
+@import url('./styles/modules/window.css');
+@import url('./styles/modules/wireplumber.css');
+@import url('./styles/modules/workspaces.css');
+
