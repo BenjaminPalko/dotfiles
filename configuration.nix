@@ -94,6 +94,7 @@
     wget
     inotify-tools
     killall
+    btop
     neofetch
     # Hyprland
     hyprcursor
