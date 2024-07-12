@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
+      ./nix/services.nix
     ];
   nixpkgs.config.allowUnfree = true;
   # Use the systemd-boot EFI boot loader.
