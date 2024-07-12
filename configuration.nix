@@ -62,6 +62,7 @@
       nodejs
       bun
       rustc
+      cargo
       python3
       # Music
       playerctl
@@ -91,16 +92,20 @@
     gcc
     cmake
     go
+    sass
     unzip
     ffmpeg
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     inotify-tools
     killall
+    brightnessctl
+    fd
     btop
     neofetch
     # Hyprland
     hyprcursor
+    ags
     waybar
     swaynotificationcenter
     swww
@@ -127,7 +132,7 @@
     zsh.enable = true;
     hyprland = {
       enable = true;
-      xwayland.enable = true;
+      #xwayland.enable = true;
     };
     hyprlock.enable = true;
     thunar.enable = true;

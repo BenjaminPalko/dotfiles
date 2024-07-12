@@ -19,11 +19,11 @@
 
 html.__fb-dark-mode {
   --icon-primary-color: #f38ba8;
-  --messenger-card-background: --var(--container-dark-color);
+  --messenger-card-background: var(--container-dark-color);
 }
 
 div.__fb-dark-mode {
-  --messenger-card-background: --var(--container-color);
+  --messenger-card-background: var(--list-header-color);
 }
 
 html.dark-mode body {
