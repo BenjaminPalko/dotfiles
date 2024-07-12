@@ -8,13 +8,13 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
+      ./nix/nvidia.nix
       ./nix/services.nix
     ];
   nixpkgs.config.allowUnfree = true;
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelParams = [ "nvidia_drm.fbdev=1" ];
 
   # networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -115,19 +115,6 @@
   ];
   fonts.packages = with pkgs; [ (nerdfonts.override { fonts = [ "JetBrainsMono"]; }) ];
 
-  hardware.graphics = {
-    enable = true;
-    extraPackages = with pkgs; [
-      nvidia-vaapi-driver
-    ];
-  };
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = false;
-    powerManagement.finegrained = false;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-  };
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -150,16 +137,6 @@
       localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
     };
     starship.enable = true;
-  };
-  # List services that you want to enable:
-  services = {
-    pipewire = {
-      enable = true;
-      pulse.enable = true;
-    };
-    hypridle.enable = true;
-    openssh.enable = true;
-    xserver.videoDrivers = ["nvidia"];
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

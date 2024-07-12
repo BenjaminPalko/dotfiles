@@ -9,6 +9,4 @@
   services.hypridle.enable = true;
   # SSH
   services.openssh.enable = true;
-  # VideoDrivers
-  services.xserver.videoDrivers = ["nvidia"];
 }
