@@ -17,4 +17,4 @@ alias rebuild="sudo nixos-rebuild switch"
 alias dotfiles="cd ~/dotfiles/"
 alias nv="nvim"
 
-neofetch
+neofetch --ascii /home/benjamin/dotfiles/aperture.txt
