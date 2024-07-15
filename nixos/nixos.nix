@@ -16,8 +16,11 @@ in
     ./nvidia.nix
     ./audio.nix
     ./services.nix
+    ./hyprland.nix
   ];
 
+  environment.shells = with pkgs; [ zsh ];
+  programs.zsh.enable = true;
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.${username} = {
     shell = pkgs.zsh;
@@ -63,7 +66,10 @@ in
     users.${username} = {
       home.username = username;
       home.homeDirectory = "/home/${username}";
-      imports = [ ./home.nix ];
+      imports = [
+        ../home-manager/terminal.nix
+        ./home.nix
+      ];
     };
   };
 
@@ -91,7 +97,6 @@ in
     swaynotificationcenter
     swww
     pywal
-    kitty
     rofi
     emote
     # Screenshots
@@ -99,10 +104,6 @@ in
     slurp
     swappy
   ];
-
-  programs.zsh.enable = true;
-  programs.starship.enable = true;
-  fonts.packages = with pkgs; [ (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) ];
 
   programs.steam = {
     enable = true;
