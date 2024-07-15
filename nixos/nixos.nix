@@ -95,7 +95,7 @@ in
     swaynotificationcenter
     swww
     pywal
-    rofi
+    rofi-wayland
     emote
     # Screenshots
     grim
