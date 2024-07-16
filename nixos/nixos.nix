@@ -14,10 +14,11 @@ in
     ./system.nix
     ./network.nix
     ./nvidia.nix
-    ./audio.nix
+    ./media.nix
     ./services.nix
     ./shell.nix
     ./hyprland.nix
+    ./gaming.nix
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -47,8 +48,8 @@ in
       home.username = username;
       home.homeDirectory = "/home/${username}";
       imports = [
-        ../home-manager/audio.nix
         ../home-manager/hyprland.nix
+        ../home-manager/media.nix
         ../home-manager/nvim.nix
         ../home-manager/terminal.nix
         ./home.nix
@@ -62,26 +63,12 @@ in
     # System
     gcc
     cmake
-    sass
     unzip
     ffmpeg
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    inotify-tools
     killall
-    brightnessctl
-    fd
-    # Screenshots
-    grim
-    slurp
-    swappy
   ];
-
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
-  };
 
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
