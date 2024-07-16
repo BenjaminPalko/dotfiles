@@ -52,6 +52,7 @@ in
         ../home-manager/media.nix
         ../home-manager/nvim.nix
         ../home-manager/terminal.nix
+        ../home-manager/yar.nix
         ./home.nix
       ];
     };
