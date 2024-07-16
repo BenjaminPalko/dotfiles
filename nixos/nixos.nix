@@ -25,10 +25,6 @@ in
   users.users.${username} = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-    packages = with pkgs; [
-      git
-      gh
-    ];
   };
 
   home-manager = {
@@ -42,6 +38,7 @@ in
       home.username = username;
       home.homeDirectory = "/home/${username}";
       imports = [
+        ../home-manager/git.nix
         ../home-manager/hyprland.nix
         ../home-manager/media.nix
         ../home-manager/nvim.nix
