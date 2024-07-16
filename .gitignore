@@ -1,9 +1,4 @@
 
-# Caprine
-Caprine/**
-!Caprine/config.json
-!Caprine/custom.css
-
 # Cava
 ./cava/config
 cava/config

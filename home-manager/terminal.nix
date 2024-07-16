@@ -1,6 +1,5 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 {
-
   programs.kitty = {
     enable = true;
     shellIntegration.enableZshIntegration = true;
@@ -22,12 +21,16 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-    initExtra = "neofetch --ascii ~/dotfiles/aperture.txt";
+    initExtra = ''
+      neofetch --ascii ~/dotfiles/aperture.txt
+    '';
 
     shellAliases = {
       rebuild = "sudo nixos-rebuild switch";
+      clean = "nix-store --gc";
       dotfiles = "cd ~/dotfiles/";
       nv = "nvim";
+      pywal = "bash ~/dotfiles/.scripts/switch-wallpaper.sh";
     };
 
     oh-my-zsh = {
@@ -41,7 +44,7 @@
     };
 
     history = {
-      path = "~/.histfile";
+      path = "${config.xdg.dataHome}/zsh/history";
       size = 10000;
     };
   };
@@ -51,7 +54,16 @@
       add_newline = false;
     };
   };
+  programs.btop = {
+    enable = true;
+    settings = {
+      theme = "system";
+    };
+  };
 
   fonts.fontconfig.enable = true;
-  home.packages = [ (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) ];
+  home.packages = with pkgs; [
+    neofetch
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
 }

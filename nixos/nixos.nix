@@ -25,27 +25,9 @@ in
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-      # Development
-      nodejs
-      bun
-      rustc
-      go
-      cargo
-      python3
-      # Music
-      playerctl
-      cava
-      spotify
       # Git
       git
       gh
-      # Neovim
-      neovim
-      lazygit
-      ripgrep
-      xclip
-      fzf
-      nixfmt-rfc-style
       # Apps
       firefox
       discord
@@ -65,6 +47,9 @@ in
       home.username = username;
       home.homeDirectory = "/home/${username}";
       imports = [
+        ../home-manager/audio.nix
+        ../home-manager/hyprland.nix
+        ../home-manager/nvim.nix
         ../home-manager/terminal.nix
         ./home.nix
       ];
@@ -86,17 +71,6 @@ in
     killall
     brightnessctl
     fd
-    btop
-    neofetch
-    # Hyprland
-    hyprcursor
-    ags
-    waybar
-    swaynotificationcenter
-    swww
-    pywal
-    rofi-wayland
-    emote
     # Screenshots
     grim
     slurp
