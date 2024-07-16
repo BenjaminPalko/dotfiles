@@ -1,0 +1,13 @@
+{
+  "name": "ags",
+  "module": "config.js",
+  "type": "module",
+  "devDependencies": {
+    "@girs/gnome-shell": "^46.0.0",
+    "@types/bun": "latest",
+    "ts-for-gir": "^1.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
