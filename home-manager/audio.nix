@@ -1,9 +1,6 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    cava
-    spotify
-  ];
+  home.packages = with pkgs; [ spotify ];
   programs.cava = {
     enable = true;
   };
