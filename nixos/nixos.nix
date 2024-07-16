@@ -26,14 +26,8 @@ in
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-      # Git
       git
       gh
-      # Apps
-      firefox
-      discord
-      betterdiscordctl
-      caprine-bin
     ];
   };
 
@@ -53,6 +47,7 @@ in
         ../home-manager/nvim.nix
         ../home-manager/terminal.nix
         ../home-manager/yar.nix
+        ../home-manager/applications.nix
         ./home.nix
       ];
     };
