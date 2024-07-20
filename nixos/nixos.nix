@@ -39,7 +39,7 @@ in
       home.homeDirectory = "/home/${username}";
       imports = [
         ../home-manager/git.nix
-        ../home-manager/hyprland.nix
+        ../home-manager/hyprland
         ../home-manager/media.nix
         ../home-manager/nvim.nix
         ../home-manager/terminal.nix
