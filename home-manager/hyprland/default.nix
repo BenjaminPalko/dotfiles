@@ -1,5 +1,11 @@
 { pkgs, ... }:
 {
+  imports = [
+    ./gtk.nix
+    ./hypridle.nix
+    ./hyprlock.nix
+  ];
+
   home.pointerCursor = {
     gtk.enable = true;
     # x11.enable = true;
@@ -10,26 +16,6 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-  };
-
-  gtk = {
-    enable = true;
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-    gtk4.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-
-    theme = {
-      package = pkgs.whitesur-gtk-theme;
-      name = "Whitesur-dark";
-    };
-
-    iconTheme = {
-      package = pkgs.whitesur-icon-theme;
-      name = "Whitesur-Dark";
-    };
   };
 
   xdg.configFile = {
