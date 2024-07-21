@@ -16,6 +16,7 @@ in
     ./nvidia.nix
     ./media.nix
     ./services.nix
+    ./security.nix
     ./shell.nix
     ./hyprland.nix
     ./gaming.nix
