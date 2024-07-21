@@ -1,6 +1,8 @@
 window#waybar {
-  background: linear-gradient(90deg, mix(@color0, transparent, 0.5), mix(@color1, transparent, 0.5), mix(@color0, transparent, 0.5));
+  background: @background;
   animation: fadeIn 2.5s;
+  padding: 2px 0 2px 0;
+  border-radius: 0 0 12px 12px;
 }
 
 button {
@@ -12,7 +14,10 @@ window#waybar.hidden {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
