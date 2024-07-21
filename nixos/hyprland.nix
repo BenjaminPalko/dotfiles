@@ -16,15 +16,10 @@
 
   environment.systemPackages = with pkgs; [
     hyprcursor
-    waybar
-    # Apps
-    rofi-wayland
     # Notifications
-    swaynotificationcenter
     inotify-tools
     # Wallpaper
     swww
-    pywal
     # Emoji
     emote
     # Screenshots

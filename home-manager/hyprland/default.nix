@@ -1,11 +1,6 @@
 { config, pkgs, ... }:
 {
-  imports = [
-    ./gtk.nix
-    ./hypridle.nix
-    ./hyprland.nix
-    ./hyprlock.nix
-  ];
+  imports = [ ./gtk.nix ];
 
   home.pointerCursor = {
     gtk.enable = true;
@@ -15,7 +10,21 @@
     size = 24;
   };
 
+  home.packages = with pkgs; [
+    rofi-wayland
+    swaynotificationcenter
+  ];
+
+  programs.pywal.enable = true;
+  programs.waybar = {
+    enable = true;
+  };
+
   xdg.configFile = {
+    hypr = {
+      source = config.lib.file.mkOutOfStoreSymlink ../../hypr;
+      recursive = true;
+    };
     rofi = {
       source = config.lib.file.mkOutOfStoreSymlink ../../rofi;
       recursive = true;
