@@ -22,7 +22,7 @@ in
           "$lockScreen" = "hyprlock";
 
           "$mainMod" = "SUPER";
-          source = "${builtins.getEnv "PWD"}/.cache/wal/colors-hyprland.conf";
+          source = "${../../../.cache/wal/colors-hyprland.conf}";
         }
       ]
       ++ (lib.forEach configs (config: import config))
