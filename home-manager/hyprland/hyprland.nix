@@ -12,7 +12,6 @@ in
 {
   wayland.windowManager.hyprland = {
     enable = true;
-    extraConfig = builtins.readFile /home/benjamin/.cache/wal/colors-hyprland.conf;
     settings = lib.mkMerge (
       [
         {
@@ -23,6 +22,7 @@ in
           "$lockScreen" = "hyprlock";
 
           "$mainMod" = "SUPER";
+          source = "${builtins.getEnv "PWD"}/.cache/wal/colors-hyprland.conf";
         }
       ]
       ++ (lib.forEach configs (config: import config))
