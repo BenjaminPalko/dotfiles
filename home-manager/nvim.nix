@@ -1,7 +1,13 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 {
   home.packages = with pkgs; [
-    python3
+    lua
+    (python3.withPackages (
+      p: with p; [
+        pygobject3
+        gst-python
+      ]
+    ))
     nodejs
     bun
     rustc
@@ -15,7 +21,7 @@
   ];
 
   xdg.configFile.nvim = {
-    source = ../nvim;
+    source = config.lib.file.mkOutOfStoreSymlink ../nvim;
     recursive = true;
   };
 
