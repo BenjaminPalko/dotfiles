@@ -3,6 +3,7 @@
   imports = [
     ./gtk.nix
     ./hypridle.nix
+    ./hyprland.nix
     ./hyprlock.nix
   ];
 
@@ -14,15 +15,7 @@
     size = 24;
   };
 
-  wayland.windowManager.hyprland = {
-    enable = true;
-  };
-
   xdg.configFile = {
-    hypr = {
-      source = ../../hypr;
-      recursive = true;
-    };
     rofi = {
       source = ../../rofi;
       recursive = true;
