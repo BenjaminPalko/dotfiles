@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 {
   imports = [
     ./gtk.nix
@@ -17,19 +17,19 @@
 
   xdg.configFile = {
     rofi = {
-      source = ../../rofi;
+      source = config.lib.file.mkOutOfStoreSymlink ../../rofi;
       recursive = true;
     };
     swaync = {
-      source = ../../swaync;
+      source = config.lib.file.mkOutOfStoreSymlink ../../swaync;
       recursive = true;
     };
     wal = {
-      source = ../../wal;
+      source = config.lib.file.mkOutOfStoreSymlink ../../wal;
       recursive = true;
     };
     waybar = {
-      source = ../../waybar;
+      source = config.lib.file.mkOutOfStoreSymlink ../../waybar;
       recursive = true;
     };
   };

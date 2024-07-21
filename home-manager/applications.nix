@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 {
   home.packages = with pkgs; [
     firefox
@@ -8,7 +8,7 @@
   ];
 
   xdg.configFile.Caprine = {
-    source = ../caprine;
+    source = config.lib.file.mkOutOfStoreSymlink ../caprine;
     recursive = true;
   };
 }
