@@ -110,7 +110,7 @@
     "format": "{icon}",
     "tooltip": false,
     "tooltip-format": "Change Wallpaper",
-    "on-click": "bash ~/dotfiles/.scripts/switch-wallpaper.sh &",
+    "on-click": "pywal",
     "format-icons": {
       "default": " ",
     },
