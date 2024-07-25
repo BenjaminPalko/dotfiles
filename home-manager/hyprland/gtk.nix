@@ -8,15 +8,22 @@
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
-
     theme = {
-      package = pkgs.whitesur-gtk-theme;
-      name = "Whitesur-dark";
+      name = "WhiteSur-Dark";
+      package = pkgs.whitesur-gtk-theme.override {
+        colorVariants = [ "Dark" ];
+        opacityVariants = [ "normal" ];
+        darkerColor = true;
+      };
     };
-
+    cursorTheme = {
+      name = "Volantes_cursors";
+      package = pkgs.volantes-cursors;
+    };
     iconTheme = {
-      package = pkgs.whitesur-icon-theme;
-      name = "Whitesur-Dark";
+      name = "WhiteSur-dark";
+      package = pkgs.whitesur-icon-theme.override { themeVariants = [ "default" ]; };
     };
   };
+  home.sessionVariables.GTK_THEME = "WhiteSur-Dark";
 }
