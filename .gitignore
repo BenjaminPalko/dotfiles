@@ -3,9 +3,3 @@
 ./cava/config
 cava/config
 
-# Discocss
-./discocss
-discocss/
-!./discocss/custom.css
-!discocss/custom.css
-
