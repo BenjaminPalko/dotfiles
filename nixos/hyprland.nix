@@ -15,6 +15,11 @@
   };
 
   environment.systemPackages = with pkgs; [
+    egl-wayland
+    # Clipboard
+    wl-clipboard
+    cliphist
+    # Cursor
     hyprcursor
     # Notifications
     inotify-tools
