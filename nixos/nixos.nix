@@ -14,11 +14,12 @@ in
     ./system.nix
     ./network.nix
     ./nvidia.nix
-    ./media.nix
+    ./sddm.nix
     ./services.nix
     ./security.nix
     ./shell.nix
     ./hyprland.nix
+    ./media.nix
     ./gaming.nix
   ];
 
