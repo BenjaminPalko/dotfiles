@@ -2,8 +2,7 @@
 {
   home.packages = with pkgs; [
     firefox
-    discord
-    betterdiscordctl
+    webcord
     caprine-bin
   ];
 
