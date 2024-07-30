@@ -1,9 +1,15 @@
 { config, pkgs, ... }:
 {
   home.packages = with pkgs; [
+    # browser
     firefox
+    vivaldi
+    # messaging
     webcord
     caprine-bin
+    # game-dev
+    godot_4
+    aseprite
   ];
 
   xdg.configFile.Caprine = {
