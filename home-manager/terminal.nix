@@ -22,10 +22,11 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     initExtra = ''
-      neofetch --ascii ~/dotfiles/aperture.txt
+      neofetch
     '';
 
     shellAliases = {
+      neofetch = "neofetch --ascii ~/dotfiles/aperture.txt";
       rebuild = "sudo nixos-rebuild switch";
       clean = "nix-store --gc";
       dotfiles = "cd ~/dotfiles/";
