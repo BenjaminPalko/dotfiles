@@ -7,4 +7,8 @@
     wireplumber.enable = true;
   };
   services.playerctld.enable = true;
+  services.plex = {
+    enable = true;
+    openFirewall = true;
+  };
 }
