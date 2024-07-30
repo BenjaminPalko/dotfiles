@@ -1,4 +1,9 @@
-.custom-swww {
-  color: @color9;
+#custom-swww {
+  padding: 0 16px 0 8px;
+  font-size: 18px;
+  background-color: @button;
 }
 
+#custom-swww:hover {
+  background-color: @button-hover;
+}

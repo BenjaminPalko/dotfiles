@@ -1,9 +1,12 @@
 #idle_inhibitor {
   padding: 0 16px 0 12px;
-  background-color: @color5;
+  background-color: @button;
+}
+
+#idle_inhibitor:hover {
+  background-color: @button-hover;
 }
 
 #idle_inhibitor.activated {
-  background-color: @color6;
+  background-color: @button-active;
 }
-

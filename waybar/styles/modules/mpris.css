@@ -1,7 +1,7 @@
-#custom-swaync {
+#mpris {
   background-color: @button;
 }
 
-#custom-swaync:hover {
+#mpris:hover {
   background-color: @button-hover;
 }

@@ -1,8 +1,6 @@
 #temperature {
-  color: #d08770;
 }
 
 #temperature.critical {
   color: #bf616a;
 }
-

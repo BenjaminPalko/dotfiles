@@ -1,4 +1,3 @@
-
 #workspaces {
   padding: 0;
   /* border: 2px solid @color4;  */
@@ -9,23 +8,22 @@
   box-shadow: none;
   border: none;
   border-radius: 9999px;
-  color: @color2;
+  color: @button;
 }
 
 #workspaces button.active {
-  color: @color5;
+  color: @button-active;
 }
 
 #workspaces button:hover {
   background: transparent;
-  color: @color5;
+  color: @button-hover;
 }
 
 #workspaces button.focused {
-  color: @color4;
+  color: @button-active;
 }
 
 #workspaces button.urgent {
   color: #bf616a;
 }
-

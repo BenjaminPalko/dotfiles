@@ -1,0 +1,9 @@
+#custom-os {
+  padding: 0 12px 0 6px;
+  font-size: 24px;
+  background: @button;
+}
+
+#custom-os:hover {
+  background: @button-hover;
+}
