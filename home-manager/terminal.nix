@@ -22,7 +22,7 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     initExtra = ''
-      neofetch
+      neofetch --ascii ~/dotfiles/aperture.txt
     '';
 
     shellAliases = {
