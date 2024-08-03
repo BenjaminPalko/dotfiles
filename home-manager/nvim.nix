@@ -9,8 +9,12 @@
         gst-python
       ]
     ))
+    # C++
     clang
     clang-tools
+    vcpkg
+    vcpkg-tool
+    # Other
     nodejs
     bun
     rustc
@@ -35,5 +39,6 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    VCPKG_ROOT = "${pkgs.vcpkg.outpath}";
   };
 }
