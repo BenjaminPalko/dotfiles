@@ -12,7 +12,6 @@
     aseprite
     # organization
     logseq
-    opentabletdriver
   ];
 
   xdg.configFile.Caprine = {
