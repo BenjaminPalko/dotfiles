@@ -10,6 +10,9 @@
     # game-dev
     godot_4
     aseprite
+    # organization
+    logseq
+    opentabletdriver
   ];
 
   xdg.configFile.Caprine = {
