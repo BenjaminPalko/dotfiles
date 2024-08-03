@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 {
   home.packages = with pkgs; [
+    # Languages
     lua
     (python3.withPackages (
       p: with p; [
@@ -8,11 +9,14 @@
         gst-python
       ]
     ))
+    clang
+    clang-tools
     nodejs
     bun
     rustc
     go
     cargo
+    # Extensions
     ripgrep
     xclip
     fzf
