@@ -13,7 +13,6 @@
     clang
     clang-tools
     vcpkg
-    vcpkg-tool
     # Other
     nodejs
     bun
