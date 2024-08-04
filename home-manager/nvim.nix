@@ -38,6 +38,6 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
-    VCPKG_ROOT = "${pkgs.vcpkg.outPath}";
+    VCPKG_ROOT = "${pkgs.vcpkg.outPath}/share/vcpkg";
   };
 }
