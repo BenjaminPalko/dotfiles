@@ -5,7 +5,7 @@
     firefox
     vivaldi
     # messaging
-    webcord
+    discord
     caprine-bin
     # game-dev
     godot_4
