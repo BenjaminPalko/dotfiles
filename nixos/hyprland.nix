@@ -1,5 +1,9 @@
 { pkgs, ... }:
 {
+  programs.xwayland = {
+    enable = true;
+    package = pkgs.xwayland;
+  };
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -15,6 +19,8 @@
   };
 
   environment.systemPackages = with pkgs; [
+    xwayland
+    xwaylandvideobridge
     egl-wayland
     # Clipboard
     wl-clipboard
