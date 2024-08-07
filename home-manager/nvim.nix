@@ -10,6 +10,8 @@
       ]
     ))
     # C++
+    cmake
+    gnumake
     clang
     clang-tools
     vcpkg
