@@ -19,6 +19,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    xarchiver
     xwayland
     xwaylandvideobridge
     egl-wayland
