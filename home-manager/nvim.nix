@@ -14,7 +14,10 @@
     gnumake
     clang
     clang-tools
-    vcpkg
+    # OpenGL
+    glfw-wayland
+    libGL
+    libGL.dev
     # Other
     nodejs
     bun
