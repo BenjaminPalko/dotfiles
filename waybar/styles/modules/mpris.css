@@ -5,3 +5,7 @@
 #mpris:hover {
   background-color: @button-hover;
 }
+
+#mpris.spotify {
+  background-color: #1db954;
+}
