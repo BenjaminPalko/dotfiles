@@ -42,6 +42,14 @@
     "format": "{icon}",
     "format-icons": {
       "default": "",
+      "active": "",
+      "1": "󰭹",
+      "2": "󰈹",
+      "3": "",
+      "4": "",
+    },
+    "persistent-workspaces": {
+      "*": 4, // 5 workspaces by default on every monitor
     },
   },
   "hyprland/window": {
