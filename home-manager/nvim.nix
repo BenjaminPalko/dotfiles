@@ -10,11 +10,15 @@
       ]
     ))
     # C++
+    meson
+    ninja
     cmake
     gnumake
     clang
     clang-tools
     # OpenGL
+    fmt
+    fmt.dev
     glfw-wayland
     libGL
     libGL.dev
