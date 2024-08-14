@@ -14,30 +14,108 @@
 }
 
 @define-color button @color1;
-@define-color button-hover @color6;
-@define-color button-active @color4;
+@define-color button-hover @color3;
+@define-color button-active @color2;
 
 /*
 * General
 */
-@import url("./styles/module-groups.css");
-@import url("./styles/modules.css");
 @import url("./styles/waybar.css");
+
+/*
+ * Workspaces
+ */
+#workspaces {
+  border-radius: 9999px;
+  background: @button;
+}
+
+#workspaces button {
+  padding: 0 9px 0 4px;
+  box-shadow: none;
+  border: none;
+  border-radius: 9999px;
+  color: @color7;
+  font-size: 24px;
+}
+
+#workspaces button.active {
+  color: @button-active;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  color: @button-hover;
+}
+
+#workspaces button.focused {
+  color: @button-active;
+}
+
+#workspaces button.urgent {
+  color: #bf616a;
+}
 
 /*
 * Modules 
 */
-@import url("./styles/modules/os.css");
-@import url("./styles/modules/clock.css");
-@import url("./styles/modules/cpu.css");
-@import url("./styles/modules/idle.css");
-@import url("./styles/modules/memory.css");
-@import url("./styles/modules/network.css");
-@import url("./styles/modules/mpris.css");
-@import url("./styles/modules/swaync.css");
-@import url("./styles/modules/swww.css");
-@import url("./styles/modules/temperature.css");
-@import url("./styles/modules/tray.css");
-@import url("./styles/modules/window.css");
-@import url("./styles/modules/wireplumber.css");
-@import url("./styles/modules/workspaces.css");
+#cpu,
+#memory,
+#network,
+#temperature {
+  color: @color7;
+}
+
+#clock,
+#idle_inhibitor,
+#mpris,
+#custom-swaync,
+#wireplumber,
+#custom-swww,
+#custom-os {
+  background: @button;
+}
+
+#clock:hover,
+#idle_inhibitor:hover,
+#mpris:hover,
+#custom-swaync:hover,
+#wireplumber:hover,
+#custom-swww:hover,
+#custom-os:hover {
+  background: @button-hover;
+}
+
+#idle_inhibitor.activated {
+  background-color: @button-active;
+}
+
+#idle_inhibitor {
+  padding: 0 16px 0 12px;
+}
+
+#mpris.spotify {
+  background-color: #1db954;
+}
+
+#network.disconnected {
+  color: #f53c3c;
+}
+
+#temperature.critical {
+  color: #bf616a;
+}
+
+#wireplumber.muted {
+  color: #f53c3c;
+}
+
+#custom-swww {
+  padding: 0 16px 0 8px;
+  font-size: 18px;
+}
+
+#custom-os {
+  padding: 0 12px 0 6px;
+  font-size: 24px;
+}

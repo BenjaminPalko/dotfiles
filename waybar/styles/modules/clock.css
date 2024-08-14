@@ -1,7 +1,0 @@
-#clock {
-  background: @button;
-}
-
-#clock:hover {
-  background: @button-hover;
-}

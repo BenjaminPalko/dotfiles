@@ -21,3 +21,31 @@ window#waybar.hidden {
     opacity: 1;
   }
 }
+
+.module {
+  border-radius: 9999px;
+  margin: 8px 0;
+}
+
+label.module {
+  padding: 0 10px;
+  /* box-shadow: inset 0 -2px; */
+}
+
+box.module {
+  padding: 0 10px;
+}
+
+.modules-left {
+  padding: 0 3px;
+  margin-left: 10px;
+}
+
+.modules-center {
+  padding: 0 3px;
+}
+
+.modules-right {
+  padding: 0 3px;
+  margin-right: 10px;
+}

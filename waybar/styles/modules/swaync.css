@@ -1,7 +1,0 @@
-#custom-swaync {
-  background-color: @button;
-}
-
-#custom-swaync:hover {
-  background-color: @button-hover;
-}
