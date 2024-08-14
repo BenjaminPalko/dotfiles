@@ -13,9 +13,9 @@
   font-size: 16px;
 }
 
-@define-color button @color4;
-@define-color button-hover @color5;
-@define-color button-active @color6;
+@define-color button @color1;
+@define-color button-hover @color6;
+@define-color button-active @color4;
 
 /*
 * General
