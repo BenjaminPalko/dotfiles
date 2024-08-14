@@ -1,7 +1,10 @@
 { config, pkgs, ... }:
 {
   services.xserver.videoDrivers = [ "nvidia" ];
-  # boot.kernelParams = [ "nvidia_drm.fbdev=1" ];
+  boot.kernelParams = [
+    "nvidia_drm.fbdev=1"
+    "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
+  ];
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [ nvidia-vaapi-driver ];
