@@ -41,5 +41,9 @@
       source = config.lib.file.mkOutOfStoreSymlink ../../waybar;
       recursive = true;
     };
+    xfce4 = {
+      source = config.lib.file.mkOutOfStoreSymlink ../../xfce4;
+      recursive = true;
+    };
   };
 }
