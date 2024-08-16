@@ -9,7 +9,7 @@ in
 {
   imports = [
     # Generated
-    /etc/nixos/hardware-configuration.nix
+    ./hardware-configuration.nix
     # Custom
     ./system.nix
     ./network.nix
