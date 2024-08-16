@@ -33,8 +33,8 @@
     "tooltip-format-activated": "On",
     "tooltip-format-deactivated": "Off",
     "format-icons": {
-      "activated": "󱫗",
-      "deactivated": "󰔛",
+      "activated": "󱫔",
+      "deactivated": "󱫐",
     },
   },
   "hyprland/workspaces": {
@@ -107,13 +107,14 @@
       "default": "▶",
       "mpv": "🎵",
       "spotify": "",
+      "firefox": "󰈹",
     },
     "interval": 1,
     "status-icons": {
       "paused": "⏸",
     },
     "dynamic-len": 36,
-    // "ignored-players": ["firefox"]
+    "on-click-middle": "playerctld shift",
   },
   "custom/swaync": {
     "format": "{icon}",
