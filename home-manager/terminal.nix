@@ -27,7 +27,7 @@
 
     shellAliases = {
       neofetch = "neofetch --ascii ~/dotfiles/aperture.txt";
-      rebuild = "sudo nixos-rebuild switch";
+      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles";
       clean = "nix-store --gc";
       dotfiles = "cd ~/dotfiles/";
       nv = "nvim";
