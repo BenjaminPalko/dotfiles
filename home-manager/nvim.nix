@@ -11,6 +11,8 @@
     ))
     # C++
     meson
+    mesonlsp
+    pkg-config
     ninja
     cmake
     gnumake
