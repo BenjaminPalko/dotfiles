@@ -19,6 +19,7 @@
     clang
     clang-tools
     # OpenGL
+    glslls
     fmt
     fmt.dev
     glfw-wayland

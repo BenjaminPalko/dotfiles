@@ -1,13 +1,13 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = { ensure_installed = { "meson" } },
+    opts = { ensure_installed = { "glsl" } },
   },
   {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        mesonlsp = {
+        glslls = {
           mason = false,
         },
       },
