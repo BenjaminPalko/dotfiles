@@ -5,14 +5,15 @@
   home.pointerCursor = {
     gtk.enable = true;
     # x11.enable = true;
-    package = pkgs.catppuccin-cursors;
-    name = "catpuccin-mocha-light-cursors";
+    name = "volantes_cursors";
+    package = pkgs.volantes-cursors;
     size = 24;
   };
 
   home.packages = with pkgs; [
     rofi-wayland
     swaynotificationcenter
+    volantes-cursors
   ];
 
   programs.pywal.enable = true;

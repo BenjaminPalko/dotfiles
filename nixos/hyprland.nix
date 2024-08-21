@@ -17,6 +17,7 @@
       thunar-volman
     ];
   };
+  services.gvfs.enable = true;
 
   environment.systemPackages = with pkgs; [
     xarchiver
@@ -26,8 +27,6 @@
     # Clipboard
     wl-clipboard
     cliphist
-    # Cursor
-    hyprcursor
     # Notifications
     inotify-tools
     # Wallpaper

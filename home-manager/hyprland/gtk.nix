@@ -16,10 +16,6 @@
         darkerColor = true;
       };
     };
-    cursorTheme = {
-      name = "Volantes_cursors";
-      package = pkgs.volantes-cursors;
-    };
     iconTheme = {
       name = "WhiteSur-dark";
       package = pkgs.whitesur-icon-theme.override { themeVariants = [ "default" ]; };
