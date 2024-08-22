@@ -14,9 +14,9 @@
     rofi-wayland
     swaynotificationcenter
     volantes-cursors
+    pywal
   ];
 
-  programs.pywal.enable = true;
   programs.waybar = {
     enable = true;
   };
