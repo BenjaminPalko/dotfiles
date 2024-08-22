@@ -11,7 +11,7 @@
     godot_4
     aseprite
     # organization
-    logseq
+    obsidian
   ];
 
   xdg.configFile.Caprine = {
