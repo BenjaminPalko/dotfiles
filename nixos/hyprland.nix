@@ -20,6 +20,7 @@
   services.gvfs.enable = true;
 
   environment.systemPackages = with pkgs; [
+    xdg-desktop-portal-gtk
     xarchiver
     xwayland
     xwaylandvideobridge
