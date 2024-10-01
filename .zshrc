@@ -109,6 +109,7 @@ alias pywal="~/dotfiles/.scripts/pywal.sh"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+. "/home/benjamin/.asdf/installs/rust/1.81.0/env"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
