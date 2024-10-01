@@ -14,7 +14,9 @@ cat <<"EOF"
 EOF
 echo -e "${NONE}"
 
-mkdir ~/Development/
+if [ ! -d ~/Development/ ]; then
+	mkdir ~/Development/
+fi
 
 # Install package managers
 source .install/install-yay.sh
