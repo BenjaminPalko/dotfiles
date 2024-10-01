@@ -2,7 +2,6 @@ packagesPacman=(
 	"bitwarden"
 	"firefox"
 	"discord"
-	"caprine"
 	"spotify-launcher"
 	"obsidian"
 	"lutris"
@@ -10,4 +9,5 @@ packagesPacman=(
 )
 
 packagesYay=(
+	"caprine"
 )
