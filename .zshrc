@@ -106,8 +106,8 @@ alias dotfiles="~/dotfiles/"
 alias nv="nvim"
 alias dev="~/Development"
 
-source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -125,4 +125,3 @@ compinit
 neofetch
 
 export EDITOR=nvim
-export PATH=$PATH:/home/benjamin/.spicetify
