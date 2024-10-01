@@ -10,5 +10,4 @@ packagesPacman=(
 )
 
 packagesYay=(
-	"emote"
 )
