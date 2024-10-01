@@ -9,6 +9,7 @@ packagesPacman=(
 	"lazydocker"
 	"neofetch"
 	"ripgrep"
+	'fzf'
 	"neovim"
 	"ttf-jetbrains-mono-nerd"
 	"btop"
