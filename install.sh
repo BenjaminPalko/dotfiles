@@ -18,14 +18,16 @@ mkdir ~/Development/
 
 # Install package managers
 source .install/install-yay.sh
-source .install/brew-install.sh
 
 # Install base packages
 source .install/packages/base.sh
 source .install/install-packages.sh
 
 # Install general packages
-source .install/packages/general.sh
+source .install/packages/base.sh
+source .install/packages/shell.sh
+source .install/packages/applications.sh
+source .install/packages/hyprland.sh
 source .install/install-packages.sh
 
 # oh-my-zsh
@@ -39,7 +41,3 @@ source .install/symlink.sh
 
 # Add asdf plugins
 source .install/add-asdf-plugins.sh
-
-# Spicetify
-source .scripts/spicetify-postinstall.sh
-
