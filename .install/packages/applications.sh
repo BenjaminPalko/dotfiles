@@ -3,6 +3,7 @@ packagesPacman=(
 	"firefox"
 	"discord"
 	"caprine"
+	"spotify-launcher"
 	"obsidian"
 	"lutris"
 	"steam"
