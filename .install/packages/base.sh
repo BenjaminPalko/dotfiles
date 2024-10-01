@@ -11,8 +11,6 @@ packagesPacman=(
 	"pipewire-alsa"
 	"pipewire-pulse"
 	"python-pywal"
-	"vulkan-icd-loader"
-	"lib32-vulkan-icd-loader"
 )
 
 packagesYay=(

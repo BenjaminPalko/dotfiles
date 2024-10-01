@@ -17,6 +17,8 @@ packagesPacman=(
 	"swappy"
 	"cliphist"
 	"xorg-xrdb"
+	"vulkan-icd-loader"
+	"lib32-vulkan-icd-loader"
 )
 
 packagesYay=(
