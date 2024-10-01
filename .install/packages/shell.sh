@@ -13,6 +13,10 @@ packagesPacman=(
 	"ttf-jetbrains-mono-nerd"
 	"btop"
 	"cmatrix"
+	"dotnet-runtime"
+	"dotnet-sdk"
+	"aspnet-runtime"
+	"wine"
 )
 
 packagesYay=(

@@ -1,5 +1,4 @@
 packagesPacman=(
-	"bitwarden"
 	"firefox"
 	"discord"
 	"spotify-launcher"
