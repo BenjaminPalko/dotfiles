@@ -6,6 +6,7 @@ packagesPacman=(
 	"git"
 	"github-cli"
 	"lazygit"
+	"lazydocker"
 	"neofetch"
 	"ripgrep"
 	"neovim"

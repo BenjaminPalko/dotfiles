@@ -11,8 +11,3 @@ packagesPacman=(
 packagesYay=(
 	"emote"
 )
-
-packagesBrew=(
-	"asdf"
-	"lazydocker"
-)
