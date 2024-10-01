@@ -3,7 +3,7 @@
 # files
 files=(
 	".bashrc"
-	",gitconfig"
+	".gitconfig"
 	".zshrc"
 	".tool-versions"
 )
