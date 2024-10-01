@@ -21,16 +21,17 @@ fi
 # Install package managers
 source .install/install-yay.sh
 
-# Install base packages
-source .install/packages/base.sh
-source .install/install-packages.sh
-
 # Install general packages
 source .install/packages/base.sh
 source .install/packages/shell.sh
 source .install/packages/applications.sh
 # source .install/packages/hyprland.sh
-source .install/install-packages.sh
+
+echo "Installing pacman packages..."
+_installPackagesPacman "${packagesPacman[@]}"
+
+echo "Installing yay packages..."
+_installPackagesYay "${packagesYay[@]}"
 
 # oh-my-zsh
 source .install/install-oh-my-zsh.sh
