@@ -1,0 +1,20 @@
+packagesPacman=(
+	"kitty"
+	"zsh"
+	"zsh-autosuggestions"
+	"zsh-syntax-highlighting"
+	"git"
+	"github-cli"
+	"lazygit"
+	"neofetch"
+	"ripgrep"
+	"neovim"
+	"ttf-jetbrains-mono-nerd"
+	"btop"
+	"cmatrix"
+)
+
+packagesYay=(
+	"asdf-vm"
+	"cava"
+)

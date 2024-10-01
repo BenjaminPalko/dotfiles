@@ -1,0 +1,28 @@
+packagesPacman=(
+	"hyprland"
+	"rofi-wayland"
+	"swaync"
+	"swww"
+	"bluez"
+	"bluez-utils"
+	"blueman"
+	"xdg-desktop-portal-wlr"
+	"xdg-desktop-portal-hyprland"
+	"gtk3"
+	"gtk4"
+	"thunar"
+	"waybar"
+	"grim"
+	"slurp"
+	"swappy"
+	"cliphist"
+	"xorg-xrdb"
+)
+
+packagesYay=(
+	"wlogout"
+	"nwg-look"
+	"emote"
+	"hypridle"
+	"hyprlock"
+)

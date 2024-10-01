@@ -1,32 +1,18 @@
 packagesPacman=(
-  "zsh"
-  "bitwarden"
-  "firefox"
-  "github-cli"
-  "lazygit"
-  "neofetch"
-  "neovim"
-  "ttf-jetbrains-mono-nerd" 
-  "btop"
-  "cmatrix"
-  "discord"
-  "caprine"
-  "obsidian"
-  "glow"
-  "lutris"
-  "steam"
+	"bitwarden"
+	"firefox"
+	"discord"
+	"caprine"
+	"obsidian"
+	"lutris"
+	"steam"
 )
 
 packagesYay=(
-  "cava"
-  "emote"
-  "spotify"
-  "spicetify-cli"
+	"emote"
 )
 
 packagesBrew=(
-  "zsh-autosuggestions"
-  "zsh-syntax-highlighting"
-  "asdf"
-  "lazydocker"
+	"asdf"
+	"lazydocker"
 )
