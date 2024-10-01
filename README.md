@@ -13,6 +13,7 @@ Connect to wifi...
 ```
 iwctl
 ```
+
 Test connection with `ping google.ca`
 
 Run the arch install command
@@ -20,6 +21,7 @@ Run the arch install command
 ```shell
 archinstall
 ```
+
 Running through the options...
 
 - Disc config: Best-effort
@@ -32,22 +34,31 @@ Running through the options...
 
 Install...
 
+### Enable multilib
+
+```conf
+/etc/pacman.conf
+--------------------
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+
 ### TODO
 
 - [ ] zsh Configuration
 - [ ] scripted setup
-    - [ ] pacman packages
-    - [ ] yay packages
-    - [ ] brew packages
-    - [ ] aliases
-    - [ ] symlinks
+  - [ ] pacman packages
+  - [ ] yay packages
+  - [ ] brew packages
+  - [ ] aliases
+  - [ ] symlinks
 - [ ] hyprland Configuration
-    - [ ] waybar
-    - [ ] hyprpaper
-    - [ ] swaylock/hyprlock
-    - [ ] swayidle/hypridle
-    - [ ] keybindings
-    - [ ] wlogout
+  - [ ] waybar
+  - [ ] hyprpaper
+  - [ ] swaylock/hyprlock
+  - [ ] swayidle/hypridle
+  - [ ] keybindings
+  - [ ] wlogout
 
 ## Packages
 
@@ -98,5 +109,3 @@ This is a list of packages sorted by the package manager used to install them al
 - zsh-completions - zsh plugin that adds CLI completions
 - zsh-autosuggestions - zsh that adds suggestions
 - asdf - runtime manager (nodejs, python, bun, etc...)
-
-
