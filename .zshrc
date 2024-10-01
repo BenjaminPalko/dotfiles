@@ -73,7 +73,7 @@ cat ~/.cache/wal/sequences
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew asdf gh bun npm yarn)
+plugins=(git asdf gh bun npm yarn)
 
 source $ZSH/oh-my-zsh.sh
 
