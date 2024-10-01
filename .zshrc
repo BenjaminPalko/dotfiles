@@ -123,6 +123,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-neofetch
+neofetch --ascii ~/dotfiles/ascii.txt
 
 export EDITOR=nvim
