@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias dotfiles="~/dotfiles/"
 alias nv="nvim"
 alias dev="~/Development"
+alias pywal="~/dotfiles/.scripts/pywal.sh"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
