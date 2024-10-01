@@ -29,7 +29,7 @@ source .install/install-packages.sh
 source .install/packages/base.sh
 source .install/packages/shell.sh
 source .install/packages/applications.sh
-source .install/packages/hyprland.sh
+# source .install/packages/hyprland.sh
 source .install/install-packages.sh
 
 # oh-my-zsh
