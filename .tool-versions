@@ -1,2 +1,3 @@
-nodejs 21.6.2
-bun 1.0.29
+nodejs 22.9.0
+bun 1.1.29
+golang 1.23.1
