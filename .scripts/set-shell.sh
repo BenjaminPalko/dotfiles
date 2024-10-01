@@ -1,4 +1,3 @@
 #!/bin/bash
 
-chsh -s /bin/zsh
-
+chsh -s $(which zsh)
