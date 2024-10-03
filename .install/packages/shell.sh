@@ -18,6 +18,8 @@ packagesPacman=(
 	"dotnet-sdk"
 	"aspnet-runtime"
 	"wine"
+	"docker"
+	"docker-compose"
 )
 
 packagesYay=(
