@@ -5,8 +5,12 @@ packagesPacman=(
 	"obsidian"
 	"lutris"
 	"steam"
+	"krita"
+	"godot-mono"
+	"thunderbird"
 )
 
 packagesYay=(
 	"caprine"
+	"aseprite"
 )
