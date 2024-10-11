@@ -20,6 +20,9 @@ packagesPacman=(
 	"wine"
 	"docker"
 	"docker-compose"
+	"meson"
+	"glfw"
+	"glad"
 )
 
 packagesYay=(
