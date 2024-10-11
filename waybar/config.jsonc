@@ -25,7 +25,7 @@
     "custom/swaync",
   ],
   "custom/os": {
-    "format": "󱄅",
+    "format": "󰣇",
     "on-click": "~/.config/rofi/scripts/powermenu_t1",
   },
   "idle_inhibitor": {
@@ -132,7 +132,7 @@
     "format": "{icon}",
     "tooltip": false,
     "tooltip-format": "Change Wallpaper",
-    "on-click": "pywal",
+    "on-click": "~/dotfiles/.scripts/pywal-swww.sh",
     "format-icons": {
       "default": "",
     },
