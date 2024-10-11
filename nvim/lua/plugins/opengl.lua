@@ -7,8 +7,8 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        glslls = {
-          mason = false,
+        glsl_analyzer = {
+          -- mason = false,
         },
       },
     },
