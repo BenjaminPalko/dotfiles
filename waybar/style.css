@@ -5,8 +5,8 @@
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "JetBrains Mono", "Iosevka Nerd Font", FontAwesome, Roboto,
-    Helvetica, Arial, sans-serif;
+  font-family: "JetBrainsMono Nerd Font", "Iosevka Nerd Font", FontAwesome,
+    Roboto, Helvetica, Arial, sans-serif;
   text-shadow: none;
   transition: color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
@@ -71,8 +71,7 @@
 #mpris,
 #custom-swaync,
 #wireplumber,
-#custom-swww,
-#custom-os {
+#custom-swww {
   background: @button;
 }
 
