@@ -69,7 +69,6 @@
 #clock,
 #idle_inhibitor,
 #mpris,
-#custom-swaync,
 #wireplumber,
 #custom-swww {
   background: @button;
@@ -115,6 +114,6 @@
 }
 
 #custom-os {
-  padding: 0 12px 0 6px;
+  padding: 0 14px 0 8px;
   font-size: 24px;
 }
