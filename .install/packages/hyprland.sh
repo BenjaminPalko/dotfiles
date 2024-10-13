@@ -1,8 +1,9 @@
 packagesPacman=(
-	"hyprland"
-	"rofi-wayland"
-	"swaync"
-	"swww"
+	"hyprland"X
+	"rofi-wayland"X
+	"swaync"X
+	"swww"X
+	"waybar"X
 	"bluez"
 	"bluez-utils"
 	"blueman"
@@ -11,7 +12,6 @@ packagesPacman=(
 	"gtk3"
 	"gtk4"
 	"thunar"
-	"waybar"
 	"grim"
 	"slurp"
 	"swappy"
