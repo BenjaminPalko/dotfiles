@@ -3,7 +3,7 @@ packagesPacman=(
 	"wget"
 	"curl"
 	"unzip"
-	"wl-clipboard"
+	"xclip"
 	"inotify-tools"
 	"pipewire"
 	"wireplumber"
