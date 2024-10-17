@@ -10,7 +10,6 @@ packagesPacman=(
 	"xdg-desktop-portal-hyprland"
 	"gtk3"
 	"gtk4"
-	"thunar"
 	"grim"
 	"slurp"
 	"swappy"
