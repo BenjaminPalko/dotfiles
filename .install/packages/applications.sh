@@ -3,7 +3,6 @@ packagesPacman=(
 	"discord"
 	"spotify-launcher"
 	"obsidian"
-	"lutris"
 	"krita"
 	"godot-mono"
 	"thunderbird"
