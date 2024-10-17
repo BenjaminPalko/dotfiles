@@ -6,7 +6,6 @@ packagesPacman=(
 	"git"
 	"github-cli"
 	"lazygit"
-	"lazydocker"
 	"neofetch"
 	"ripgrep"
 	'fzf'
@@ -26,6 +25,7 @@ packagesPacman=(
 )
 
 packagesYay=(
+	"lazydocker"
 	"asdf-vm"
 	"cava"
 )
