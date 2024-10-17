@@ -1,9 +1,9 @@
 packagesPacman=(
-	"hyprland"X
-	"rofi-wayland"X
-	"swaync"X
-	"swww"X
-	"waybar"X
+	"hyprland"
+	"rofi-wayland"
+	"swaync"
+	"swww"
+	"waybar"
 	"bluez"
 	"bluez-utils"
 	"blueman"
@@ -15,8 +15,6 @@ packagesPacman=(
 	"swappy"
 	"cliphist"
 	"xorg-xrdb"
-	"vulkan-icd-loader"
-	"lib32-vulkan-icd-loader"
 )
 
 packagesYay=(
