@@ -4,7 +4,6 @@ packagesPacman=(
 	"spotify-launcher"
 	"obsidian"
 	"lutris"
-	"steam"
 	"krita"
 	"godot-mono"
 	"thunderbird"
