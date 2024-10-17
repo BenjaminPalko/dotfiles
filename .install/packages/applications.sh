@@ -4,6 +4,8 @@ packagesPacman=(
 	"spotify-launcher"
 	"obsidian"
 	"krita"
+	"inkscape"
+	"gimp"
 	"godot-mono"
 	"thunderbird"
 )
