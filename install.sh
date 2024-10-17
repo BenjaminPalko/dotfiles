@@ -21,6 +21,9 @@ fi
 # Install package managers
 source .install/install-yay.sh
 
+# Symantic links
+source .install/symlink.sh
+
 # Install general packages
 source .install/packages/base.sh
 source .install/packages/shell.sh
@@ -38,9 +41,6 @@ source .install/install-oh-my-zsh.sh
 
 # Set Shell
 source .scripts/set-shell.sh
-
-# Symantic links
-source .install/symlink.sh
 
 # Add asdf plugins
 source .install/add-asdf-plugins.sh
