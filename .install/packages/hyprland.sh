@@ -18,7 +18,6 @@ packagesPacman=(
 )
 
 packagesYay=(
-	"wlogout"
 	"nwg-look"
 	"hypridle"
 	"hyprlock"
