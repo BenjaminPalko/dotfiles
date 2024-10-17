@@ -7,7 +7,6 @@ packagesPacman=(
 	"bluez"
 	"bluez-utils"
 	"blueman"
-	"xdg-desktop-portal-wlr"
 	"xdg-desktop-portal-hyprland"
 	"gtk3"
 	"gtk4"
