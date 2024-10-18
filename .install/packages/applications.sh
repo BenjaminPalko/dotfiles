@@ -1,5 +1,6 @@
 packagesPacman=(
 	"firefox"
+	"mplayer"
 	"discord"
 	"spotify-launcher"
 	"obsidian"
