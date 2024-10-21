@@ -1,0 +1,3 @@
+packagesPacman=(
+	"plymouth"
+)
