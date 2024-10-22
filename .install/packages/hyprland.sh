@@ -1,5 +1,6 @@
 packagesPacman=(
 	"hyprland"
+	"polkit"
 	"rofi-wayland"
 	"swaync"
 	"swww"
