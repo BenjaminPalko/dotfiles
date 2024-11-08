@@ -15,4 +15,5 @@ packagesPacman=(
 packagesYay=(
 	"caprine"
 	"aseprite"
+	"davinci-resolve"
 )
