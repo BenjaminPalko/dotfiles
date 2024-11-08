@@ -10,7 +10,10 @@ packagesPacman=(
 	"pipewire-audio"
 	"pipewire-alsa"
 	"pipewire-pulse"
-	"python-pywal"
+	"python-pywal",
+	"noto-fonts",
+	"noto-fonts-cjk",
+	"noto-fonts-emoji"
 )
 
 packagesYay=(
