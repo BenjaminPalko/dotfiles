@@ -42,10 +42,10 @@
     "format": "{icon}",
     "format-icons": {
       "default": "",
-      "1": "󰭹",
-      "2": "󰈹",
-      "3": "",
-      "4": "",
+      "1": "",
+      "2": "󰭹",
+      "3": "󰈹",
+      "4": "",
     },
     "persistent-workspaces": {
       "*": 4, // 5 workspaces by default on every monitor
