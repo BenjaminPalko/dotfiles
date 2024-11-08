@@ -109,7 +109,7 @@ alias pywal="~/dotfiles/.scripts/pywal.sh"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-. "/home/benjamin/.asdf/installs/rust/1.81.0/env"
+. "$HOME/.asdf/installs/rust/1.81.0/env"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -118,7 +118,7 @@ SAVEHIST=1000
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/benjamin/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
