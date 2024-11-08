@@ -7,6 +7,7 @@ packagesPacman=(
 	"krita"
 	"inkscape"
 	"gimp"
+	"blender"
 	"godot-mono"
 	"thunderbird"
 )
