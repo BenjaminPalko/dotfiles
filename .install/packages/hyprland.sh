@@ -1,5 +1,7 @@
 packagesPacman=(
 	"hyprland"
+	"hypridle"
+	"hyprlock"
 	"polkit"
 	"rofi-wayland"
 	"swaync"
@@ -20,6 +22,4 @@ packagesPacman=(
 
 packagesYay=(
 	"nwg-look"
-	"hypridle"
-	"hyprlock"
 )
