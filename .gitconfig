@@ -7,3 +7,5 @@
 [user]
 	email = benjaminpalko@hotmail.com
 	name = Benjamin Palko
+[credential]
+	helper = store
