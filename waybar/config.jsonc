@@ -134,7 +134,7 @@
     "tooltip-format": "Change Wallpaper",
     "on-click": "~/dotfiles/.scripts/pywal-swww.sh",
     "format-icons": {
-      "default": "",
+      "default": "",
     },
   },
 }
