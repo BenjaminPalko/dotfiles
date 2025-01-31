@@ -10,6 +10,7 @@ packagesPacman=(
 	"blender"
 	"godot-mono"
 	"thunderbird"
+	"prismlauncher"
 )
 
 packagesYay=(
