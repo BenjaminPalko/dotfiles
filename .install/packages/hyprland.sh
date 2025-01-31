@@ -22,4 +22,5 @@ packagesPacman=(
 
 packagesYay=(
 	"nwg-look"
+	"aylurs-gtk-shell"
 )
