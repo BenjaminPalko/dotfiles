@@ -1,5 +1,4 @@
 packagesPacman=(
-	"firefox"
 	"mplayer"
 	"discord"
 	"signal"
@@ -14,6 +13,7 @@ packagesPacman=(
 )
 
 packagesYay=(
+	"zen-browser-bin"
 	"aseprite"
 	"davinci-resolve"
 )
