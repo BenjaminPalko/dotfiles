@@ -2,6 +2,7 @@ packagesPacman=(
 	"firefox"
 	"mplayer"
 	"discord"
+	"signal"
 	"spotify-launcher"
 	"obsidian"
 	"krita"
@@ -13,7 +14,6 @@ packagesPacman=(
 )
 
 packagesYay=(
-	"caprine"
 	"aseprite"
 	"davinci-resolve"
 )
