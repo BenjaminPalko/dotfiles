@@ -127,3 +127,4 @@ compinit
 neofetch --ascii ~/dotfiles/ascii.txt
 
 export EDITOR=nvim
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
