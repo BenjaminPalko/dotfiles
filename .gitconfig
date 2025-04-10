@@ -3,7 +3,9 @@
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !/usr/bin/gh auth git-credential
+  helper = !/usr/bin/gh auth git-credential
+[credential "https://git.palko.ca"]
+	helper = 
 [user]
 	email = benjaminpalko@hotmail.com
 	name = Benjamin Palko
