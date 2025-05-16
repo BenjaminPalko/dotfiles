@@ -73,13 +73,14 @@ cat ~/.cache/wal/sequences
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf gh bun npm yarn)
+plugins=(git gh bun npm yarn mise)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -104,12 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles="~/dotfiles/"
 alias nv="nvim"
-alias dev="~/Development"
 alias pywal="~/dotfiles/.scripts/pywal.sh"
-
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-. "$HOME/.asdf/installs/rust/1.81.0/env"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -124,7 +120,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-neofetch --ascii ~/dotfiles/ascii.txt
+eval "$(mise activate zsh)"
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export EDITOR=nvim
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+neofetch --ascii ~/dotfiles/ascii.txt

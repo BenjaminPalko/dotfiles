@@ -5,7 +5,6 @@ files=(
 	".bashrc"
 	".gitconfig"
 	".zshrc"
-	".tool-versions"
 )
 
 _symlinkFiles() {
@@ -25,6 +24,7 @@ directories=(
 	"cava"
 	"hypr"
 	"kitty"
+	"mise"
 	"neofetch"
 	"nvim"
 	"rofi"

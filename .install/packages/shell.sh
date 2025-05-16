@@ -11,6 +11,7 @@ packagesPacman=(
 	'fzf'
 	"neovim"
 	"ttf-jetbrains-mono-nerd"
+	"mise"
 	"btop"
 	"cmatrix"
 	"dotnet-runtime"
@@ -26,6 +27,5 @@ packagesPacman=(
 
 packagesYay=(
 	"lazydocker"
-	"asdf-vm"
 	"cava"
 )
