@@ -1,6 +1,6 @@
 [tools]
 go = "latest"
-node = "latest"
+node = "20"
 rust = "latest"
 bun = "latest"
 dotnet = "8"
