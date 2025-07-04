@@ -3,4 +3,4 @@
 	url = https://github.com/BenjaminPalko/nvim.git
 [submodule "ags"]
 	path = ags
-	url = https://github.com/BenjaminPalko/my-ags.git
+	url = https://github.com/BenjaminPalko/ags.git
