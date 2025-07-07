@@ -1,6 +1,6 @@
 [submodule "nvim"]
 	path = nvim
-	url = https://github.com/BenjaminPalko/nvim.git
+	url = https://git.palko.ca/baobeld/nvim.git
 [submodule "ags"]
 	path = ags
-	url = https://github.com/BenjaminPalko/ags.git
+	url = https://git.palko.ca/baobeld/ags.git
