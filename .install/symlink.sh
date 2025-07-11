@@ -27,6 +27,7 @@ directories=(
 	"mise"
 	"neofetch"
 	"nvim"
+	"quickshell"
 	"rofi"
 	"swappy"
 	"swaync"
