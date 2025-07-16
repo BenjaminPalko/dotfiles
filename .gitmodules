@@ -4,3 +4,6 @@
 [submodule "ags"]
 	path = ags
 	url = https://git.palko.ca/baobeld/ags.git
+[submodule "lux-shell"]
+	path = quickshell
+	url = https://git.palko.ca/baobeld/lux-shell.git
