@@ -43,33 +43,13 @@ Install...
 Include = /etc/pacman.d/mirrorlist
 ```
 
-### TODO
-
-- [ ] zsh Configuration
-- [ ] scripted setup
-  - [ ] pacman packages
-  - [ ] yay packages
-  - [ ] brew packages
-  - [ ] aliases
-  - [ ] symlinks
-- [ ] hyprland Configuration
-  - [ ] waybar
-  - [ ] hyprpaper
-  - [ ] swaylock/hyprlock
-  - [ ] swayidle/hypridle
-  - [ ] keybindings
-  - [ ] wlogout
-
 ## Packages
 
 This is a list of packages sorted by the package manager used to install them along with a small description of what they do as well as a link to their website/docs
 
 ### Pacman
 
-- Thunar - file manager
 - zsh - Shell
-- Bitwarden - Password manager
-- Firefox - web browser
 - git - Version control
 - github-cli - Github CLI
 - lazygit - CLI git client
@@ -81,24 +61,18 @@ This is a list of packages sorted by the package manager used to install them al
 - xclip - Clipboard util
 - ripgrep - CLI grep tool (used for neovim text search across files)
 - btop - resource monitor
-- dunst - notification daemon
 - cmatrix - THE MATRIX
 - swappy - screenshot tool
 - spotify - Music App
 - discord - Messaging
-- caprine - Facebook messenger
 - obsidian - markdown and stuff
 
 #### Hyprland
 
-- waybar - wayland status bar
 - swww - wallpaper animations
 - hypridle - hyprland idle daemon
 - hyprlock - hyprland lock screen
-- wlogout - logout manu
 - pywal - generates color palettes from wallpaper
-- hyprland-plugins - self explanitory
-- SwayNotificationCenter - notification UI
 
 ### Yay
 
