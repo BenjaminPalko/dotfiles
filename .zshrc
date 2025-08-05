@@ -75,8 +75,6 @@ cat ~/.cache/wal/sequences
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git gh bun npm yarn mise)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -121,11 +119,13 @@ compinit
 # End of lines added by compinstall
 
 eval "$(mise activate zsh)"
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nvim
 export QML_IMPORT_PATH=/usr/lib/qt6/qml
 export QML2_IMPORT_PATH=/usr/lib/qt6/qml
 
 neofetch --ascii ~/dotfiles/ascii.txt
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
