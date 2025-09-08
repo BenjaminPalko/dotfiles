@@ -1,0 +1,24 @@
+{
+	"palette": {
+		"primary": "#5e81ac",
+		"primarycontent": "#03060b",
+		"secondary": "#81a1c1",
+		"secondarycontent": "#06090d",
+		"accent": "#88c0d0",
+		"accentcontent": "#070d10",
+		"neutral": "#4c566a",
+		"neutralcontent": "#d8dee9",
+		"base100": "#eceff4",
+		"base200": "#e5e9f0",
+		"base300": "#d8dee9",
+		"basecontent": "#2e3440",
+		"info": "#b48ead",
+		"infocontent": "#0c070b",
+		"success": "#a3be8d",
+		"successcontent": "#0a0d07",
+		"warning": "#ebcb8b",
+		"warningcontent": "#130f07",
+		"error": "#bf616a",
+		"errorcontent": "#0d0304"
+	}
+}
