@@ -123,8 +123,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nvim
-export QML_IMPORT_PATH=/usr/lib/qt6/qml
-export QML2_IMPORT_PATH=/usr/lib/qt6/qml
 
 neofetch --ascii ~/dotfiles/ascii.txt
 
